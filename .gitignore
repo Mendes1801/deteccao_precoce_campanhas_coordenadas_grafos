@@ -1,0 +1,25 @@
+##Todos PDFs
+*.pdf
+
+##Meta dados do dataset
+metadata_graph.json
+
+##Arquivos compactados
+*.tar
+
+##Pastas que devem ser ignoradas
+small_encoder_final
+
+##Arquivos excel
+*.xlsx
+
+## Ambiente Python e caches
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+## Resultados derivados reproduziveis
+outputs/

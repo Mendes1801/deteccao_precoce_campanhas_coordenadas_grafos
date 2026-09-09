@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "len-early-detection"
+version = "0.1.0"
+description = "Ferramentas iniciais para EDA temporal do dataset LEN"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "ijson>=3.4,<4",
+  "matplotlib>=3.10,<4",
+  "networkx>=3.4,<4",
+  "pandas>=2.3,<4",
+  "seaborn>=0.13,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+notebook = ["jupyterlab>=4.4,<5"]
+
+[project.scripts]
+len-summary = "len_eda.summary:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
