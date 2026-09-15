@@ -7,6 +7,13 @@ meio da evolução de grafos temporais. A base experimental inicial é o
 O estado atual do ambiente, o que já foi executado e o fluxo recomendado para
 os próximos notebooks estão em [docs/guia_ambiente_e_fluxo.md](docs/guia_ambiente_e_fluxo.md).
 
+## Entrega do projeto
+
+- [Relatório do Projeto](IA_7K_SI_Camila%26Bruno/Relatório%20do%20Projeto.md): problema, ética, dataset, EDA, metodologia e referências.
+- [Notebook da EDA inicial](notebooks/01_eda_inicial_len.ipynb): análise exploratória em Python.
+- [Código-fonte da EDA](src/len_eda/summary.py): leitor incremental e cálculo das métricas.
+- Dataset: `small_encoder_final/`, disponibilizado localmente conforme a base LEN; os arquivos brutos não são alterados.
+
 ## Primeira configuração do ambiente
 
 O ambiente desta etapa foi mantido propositalmente pequeno: leitura incremental

@@ -1,0 +1,105 @@
+RELATORIO DO PROJETO
+
+1) TITULO
+
+Deteccao precoce de campanhas coordenadas em redes sociais por meio da evolucao de grafos temporais.
+
+2) INTEGRANTES
+
+Camila Nunes Carniel 
+Bruno Germanetti 
+
+3) RESUMO
+
+Este projeto investiga a identificacao precoce de campanhas coordenadas em redes sociais a partir da evolucao temporal das interacoes entre usuarios. A base experimental inicial e o Large Engagement Networks (LEN), formado por grafos direcionados rotulados como campaign ou noncampaign. A analise exploratoria foi implementada em Python, com leitura incremental dos arquivos JSON, calculo de metricas estruturais e temporais e verificacao de integridade. O pacote local possui 104 grafos, sendo 53 campanhas e 51 nao campanhas, com 212.231 nos e 289.975 arestas. A metodologia proposta separa as redes por campanha, cria janelas temporais, extrai caracteristicas da topologia e do crescimento e compara baselines com modelos temporais de grafos.
+
+4) INTRODUCAO
+
+4.a) Contextualizacao
+
+Redes sociais conectam usuarios, publicacoes e comunidades em grande escala. Essa conectividade pode ser explorada por grupos que coordenam comportamentos, amplificam narrativas ou simulam engajamento organico. A estrutura da rede e a ordem temporal das interacoes podem revelar sinais de coordenacao. Gopalakrishnan et al. (2025) apresentam o LEN como base para classificar tendencias organicas e campanhas coordenadas. Este projeto aplica essa ideia ao cenario de deteccao precoce.
+
+4.b) Justificativa
+
+A deteccao tardia reduz a possibilidade de analise e resposta. Por outro lado, uma decisao antecipada trabalha com sinais incompletos e pode gerar falsos positivos. Avaliar diferentes fracoes temporais da rede permite medir o compromisso entre antecedencia e desempenho. A leitura incremental tambem e necessaria porque os arquivos possuem vetores de atributos de alta dimensao.
+
+4.c) Objetivo
+
+O objetivo geral e desenvolver e avaliar uma abordagem reprodutivel para detectar precocemente campanhas coordenadas usando a evolucao temporal de grafos de interacao.
+
+Objetivos especificos:
+- caracterizar a estrutura, escala, temporalidade e qualidade do LEN;
+- definir uma amostra canonica e evitar duplicidades ou vazamento temporal;
+- reconstruir grafos parciais em diferentes fracoes da evolucao;
+- extrair caracteristicas estruturais e temporais;
+- comparar um baseline simples com modelos temporais;
+- avaliar desempenho, antecedencia, estabilidade e interpretabilidade.
+
+4.d) Opcao do projeto
+
+A opcao e um projeto aplicado de ciencia de dados e inteligencia artificial para analise de redes sociais. O problema sera inicialmente tratado como classificacao binaria de grafos: campaign versus noncampaign. O escopo nao inclui identificacao nominal de pessoas, moderacao automatica ou intervencao sobre usuarios.
+
+5) DESCRICAO DO PROBLEMA
+
+Dado um grafo de interacoes parcialmente observado, deseja-se estimar se ele pertence a uma campanha coordenada. As arestas devem ser ordenadas por timestamp e os estados parciais devem ser criados com 10%, 20%, ate 100% das arestas observadas. O modelo deve estimar a probabilidade de campanha em cada estado e indicar em qual fracao da evolucao a decisao se torna confiavel.
+
+A ordem dos eventos nao pode ser inferida pela posicao no JSON, pois a EDA encontrou arquivos nao ordenados cronologicamente. O LEN mantem a interacao mais recente de cada par ordenado de usuarios; logo, a reconstrucao representa as arestas retidas pela base e nao o fluxo original completo (GOPALAKRISHNAN et al., 2025). Atributos calculados no grafo completo, como kcore, nao devem ser usados nos estados parciais porque podem introduzir informacao futura.
+
+6) ASPECTOS ETICOS DO USO DA IA E RESPONSABILIDADE
+
+Um falso positivo pode associar comportamento legitimo a manipulacao, afetar reputacao e gerar decisoes injustas. Um falso negativo pode deixar uma campanha sem analise. Portanto, o sistema deve apoiar a investigacao, e nao decidir sozinho por punicao, remocao ou atribuicao de intencao.
+
+A base deve ser usada conforme sua licenca e finalidade cientifica. Identificadores e atributos potencialmente reidentificaveis devem ser minimizados ou anonimizados quando necessario. O grupo nao deve tentar reidentificar individuos, inferir caracteristicas sensiveis ou atribuir o rotulo experimental a uma pessoa real.
+
+A equipe deve documentar origem, transformacoes, criterios de inclusao, limitacoes e incertezas. Treino, validacao e teste devem ser separados por campanha antes das janelas temporais. Resultados devem incluir analise de erros, calibracao e revisao humana. O rotulo campaign e um rotulo do dataset, nao uma prova de ma-fe, causalidade ou ilegalidade.
+
+7) DATASET, ANALISE EXPLORATORIA E PREPARACAO EM PYTHON
+
+O dataset utilizado e o Large Engagement Networks (LEN), disponibilizado em https://erdemub.github.io/large-engagement-network/. O subconjunto local fica na pasta small_encoder_final/, com um arquivo JSON por grafo. Os arquivos contem grafos direcionados e nao multigrafos, nos e links. As arestas possuem source, target, timestamp e Interaction_Count. Tambem existem node_attr com 772 posicoes e edge_attr com 776 posicoes; esses vetores foram ignorados no baseline inicial porque sua disponibilidade temporal ainda nao foi validada.
+
+Resultados da EDA inicial:
+- 104 arquivos locais;
+- 53 campanhas e 51 nao campanhas;
+- 212.231 nos e 289.975 arestas;
+- timestamps presentes em 100% das arestas;
+- nenhum ID de no duplicado identificado;
+- nenhum endpoint de aresta ausente identificado.
+
+O modulo src/len_eda/summary.py usa ijson para ler os JSONs incrementalmente sem carregar os grandes vetores na memoria. Tokens NaN sao convertidos para null apenas durante a leitura. Para cada grafo sao calculadas metricas de tamanho, nos, arestas, densidade, graus, reciprocidade, componentes, timestamps, duracao, cobertura temporal e Interaction_Count.
+
+Comando de reproducao:
+len-summary --data-dir small_encoder_final --output outputs/len_small_summary.csv
+
+O notebook da analise exploratoria e notebooks/01_eda_inicial_len.ipynb. O codigo reutilizavel esta em src/len_eda/summary.py e o teste em tests/test_summary.py.
+
+8) METODOLOGIA E RESULTADOS ESPERADOS
+
+Etapas:
+1. Resolver a diferenca entre os 104 arquivos locais e os 100 grafos descritos na documentacao, registrando a duplicidade encontrada.
+2. Ordenar as arestas por timestamp.
+3. Criar grafos parciais com 10%, 20%, ate 100% das arestas.
+4. Separar treino, validacao e teste por campanha antes das janelas.
+5. Extrair usuarios ativos, arestas, Interaction_Count, graus, densidade, reciprocidade, componentes, concentracao e velocidade de crescimento.
+6. Comparar regras simples e classificadores tabulares, como regressao logistica ou arvore.
+7. Avaliar modelos temporais de grafos somente depois da validacao do baseline.
+8. Medir acuracia balanceada, precisao, revocacao, F1, ROC-AUC, PR-AUC, calibracao e desempenho por fracao temporal.
+
+Espera-se produzir uma base canonica documentada, tabelas e graficos reproduziveis, um pipeline sem vazamento temporal, comparacao transparente de baselines e uma estimativa da quantidade de evolucao necessaria para identificar uma campanha. Nao se espera, nesta etapa, uma solucao pronta para moderacao em producao.
+
+9) REFERENCIAS CITADAS NO TEXTO
+
+GOPALAKRISHNAN, A. A.; HOSSAIN, J.; ELMAS, T.; SARIYUCE, A. E. Large Engagement Networks for Classifying Coordinated Campaigns and Organic Twitter Trends. Proceedings of the International AAAI Conference on Web and Social Media, v. 19, n. 1, p. 688-702, 2025. DOI: 10.1609/icwsm.v19i1.35839.
+
+GOPALAKRISHNAN, A. A.; HOSSAIN, J.; ELMAS, T.; SARIYUCE, A. E. Large Engagement Network. Pagina do projeto e dataset. Disponivel em: https://erdemub.github.io/large-engagement-network/. Acesso em: 15 set. 2026.
+
+10) BIBLIOGRAFIA
+
+GUDIVADA, V. N.; RAGHAVAN, V. V.; KOHLER, W. W. Web 2.0 and its implications for data management. Journal of Information Science, v. 35, n. 4, 2009.
+
+MITCHELL, M. Artificial Intelligence: A Guide for Thinking Humans. New York: Farrar, Straus and Giroux, 2019.
+
+NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY. Artificial Intelligence Risk Management Framework (AI RMF 1.0). Gaithersburg: NIST, 2023. DOI: 10.6028/NIST.AI.100-1.
+
+NEWMAN, M. E. J. Networks: An Introduction. Oxford: Oxford University Press, 2010.
+
+RECUERO, R. Redes sociais na internet. Porto Alegre: Sulina, 2009.
