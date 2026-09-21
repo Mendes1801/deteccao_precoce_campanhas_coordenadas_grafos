@@ -131,12 +131,14 @@ gerou cada figura, quais parametros foram usados e como repetir a analise.
    das arestas por `timestamp` e descrever a duracao de cada rede. Os arquivos
    nao estao ordenados cronologicamente, portanto todo codigo futuro deve
    ordenar as arestas explicitamente.
-3. Implementar em `src/` uma funcao que gere grafos parciais em 10%, 20%, ...,
-   100% da evolucao observada. O notebook `03` deve testar e documentar essa
-   funcao.
-4. Extrair as primeiras features estruturais e temporais por janela e gerar a
-   primeira tabela de atributos. Somente depois disso faz sentido iniciar o
-   baseline.
+3. A funcao de grafos parciais foi implementada em `src/len_eda/temporal.py`.
+   Ela aceita fracao do tempo ou fracao das arestas observadas e possui testes.
+4. As features estruturais e temporais sao calculadas por
+   `src/len_eda/features.py`. O comando `len-features` gera a tabela das duas
+   modalidades e das dez fracoes.
+5. A EDA aprofundada esta em `notebooks/02_eda_aprofundada_len.ipynb`. O proximo
+   passo e resolver a lista canonica dos 100 grafos, criar o split por arquivo e
+   somente entao iniciar o baseline.
 
 ## Regras metodologicas que ja valem
 

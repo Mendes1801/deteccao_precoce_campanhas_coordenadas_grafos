@@ -22,6 +22,7 @@ notebook = ["jupyterlab>=4.4,<5"]
 
 [project.scripts]
 len-summary = "len_eda.summary:main"
+len-features = "len_eda.pipeline:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

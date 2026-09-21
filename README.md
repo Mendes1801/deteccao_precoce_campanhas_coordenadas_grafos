@@ -41,6 +41,25 @@ Depois, abra o notebook:
 jupyter lab notebooks/01_eda_inicial_len.ipynb
 ```
 
+## Grafos parciais e EDA aprofundada
+
+O segundo estágio reconstrói cada grafo em 10%, 20%, ..., 100% por duas
+modalidades: fração da duração total e fração das arestas observadas. A duplicata
+conhecida é excluída por um arquivo de configuração, sem alterar os JSONs.
+
+```bash
+len-features \
+  --data-dir small_encoder_final \
+  --exclusions config/len_small_exclusions.csv \
+  --output outputs/partial_graph_features.csv
+
+jupyter lab notebooks/02_eda_aprofundada_len.ipynb
+```
+
+A metodologia, o escopo do TCC1 e a justificativa para priorizar modelos
+clássicos antes de GNNs estão em
+[`docs/Etapa 2/Metodologia inicial e escopo do TCC1.md`](docs/Etapa%202/Metodologia%20inicial%20e%20escopo%20do%20TCC1.md).
+
 ## O que o resumo mede
 
 O comando `len-summary` percorre os arquivos sem carregar os vetores de 772 e
@@ -75,3 +94,8 @@ JSON da pasta são processados.
 5. O pacote local possui 104 arquivos, enquanto o artigo descreve 100 grafos no
    LEN-small. Há pelo menos um par de arquivos byte a byte idêntico; essa
    divergência precisa ser resolvida antes de congelar a amostra experimental.
+
+Após retirar a duplicata exata, ainda restam 103 grafos locais (52 campanhas e
+51 não campanhas). A lista de treino, validação e teste não deve ser congelada
+até que o arquivo de campanha e os dois arquivos de não campanha excedentes
+sejam identificados.
