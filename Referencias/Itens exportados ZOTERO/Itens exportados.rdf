@@ -1,0 +1,2635 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0370157312000841">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:03701573"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Holme</foaf:surname>
+                        <foaf:givenName>Petter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Saramäki</foaf:surname>
+                        <foaf:givenName>Jari</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_1"/>
+        <dc:title>Temporal networks</dc:title>
+        <dcterms:abstract>A great variety of systems in nature, society and technology – from the web of sexual contacts to the Internet, from the nervous system to power grids – can be modeled as graphs of vertices coupled by edges. The network structure, describing how the graph is wired, helps us understand, predict and optimize the behavior of dynamical systems. In many cases, however, the edges are not continuously active. As an example, in networks of communication via e-mail, text messages, or phone calls, edges represent sequences of instantaneous or practically instantaneous contacts. In some cases, edges are active for non-negligible periods of time: e.g., the proximity patterns of inpatients at hospitals can be represented by a graph where an edge between two individuals is on throughout the time they are at the same ward. Like network topology, the temporal structure of edge activations can affect dynamics of systems interacting through the network, from disease contagion on the network of patients to information diffusion over an e-mail network. In this review, we present the emergent field of temporal networks, and discuss methods for analyzing topological and temporal structure and models for elucidating their relation to the behavior of dynamical systems. In the light of traditional network theory, one can see this framework as moving the information of when things happen from the dynamical system on the network, to the network itself. Since fundamental properties, such as the transitivity of edges, do not necessarily hold in temporal networks, many of these methods need to be quite different from those for static networks. The study of temporal networks is very interdisciplinary in nature. Reflecting this, even the object of study has many names—temporal graphs, evolving graphs, time-varying graphs, time-aggregated graphs, timestamped graphs, dynamic networks, dynamic graphs, dynamical graphs, and so on. This review covers different fields where temporal graphs are considered, but does not attempt to unify related terminology—rather, we want to make papers readable across disciplines. © 2012 Elsevier B.V. All rights reserved.</dcterms:abstract>
+        <dc:date>10/2012</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0370157312000841</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:40:11</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:rights>https://www.elsevier.com/tdm/userlicense/1.0/</dc:rights>
+        <bib:pages>97-125</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:03701573">
+        <dc:identifier>DOI 10.1016/j.physrep.2012.03.001</dc:identifier>
+        <prism:volume>519</prism:volume>
+        <dc:title>Physics Reports</dc:title>
+        <dc:identifier>ISSN 03701573</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Physics Reports</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_1">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/1/Holme e Saramäki - 2012 - Temporal networks.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pdf.sciencedirectassets.com/271542/1-s2.0-S0370157312X00309/1-s2.0-S0370157312000841/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG0aCXVzLWVhc3QtMSJHMEUCIQDxJcSZcVIMIOr1MnaUfa81pDilKnXmT%2FoRkrVA13jAvQIgA%2BO62vdY7lq2n%2B%2BetQUdbHjRV0nvH2sH1UrGYnorCGoqsgUINhAFGgwwNTkwMDM1NDY4NjUiDDY%2BQea50ySUMZlC0yqPBfntUMhqCpgcwcF5h9%2B6KpOSrNy18gZ1mRkA%2Fegnk4IqQChhkOt%2F7iFrZdKFPQt%2F%2BtPRVJiHhNsC95FHCfwHxRCQBeF49cRUnhYM7RIsFx8yZGggdfctiSUaamuw4EwShM8h9qA2ZS8UqWRKvUD0GBkjI0dV17bcBrDMamT5fFKWfYvCz9s18xKSaFwOT4Njo7wofrat4FOnSmeYWT3jenMMZqYHhiYjSwXvZYAzfGZMyQ7ukGzzFWR%2F535JQbVDyeN0i1p5bJped67ojaGN7jnZjjv1RWCxLfYldZW7HJ%2FE9TkGrq5XvAOSJ0XB62uYtxgA4ijwSVMJO2J3aTS4vJ5mOm2Mo5wzb9ehS9uHC6sUgFWtr6UPmX3BzHZlg3Qfrv4VlfjteuY%2ByhTwKeHdkRo3jRIxGWS1na%2FY%2FLrjgeXGsQ1%2F2XYfgS%2Bma02XZpwhQK75W0UNi%2BhpYNGMGeZZWNPJTLpXpn94%2FYTOFrCepXS0EZb6nNF1tbgyTc4RL4kWG%2Fw7TlIfma%2FrcXlsH0z9JllhMs4JhU%2B3cZEmUUH8y1oL74Myj9tmy8my6u%2FFVrwBQPUwm39mVY%2FVHIpvH6shFFwFaciK9kaUzydWQoACwPkfaP7FeMPheqqd3AUCKyrRcxA7WzaFhxCXtAFofgiAaOrTQzOlcaUpOf4oBGtU6wuVwKAwOLaNcN1PaRYfJQHvwwm%2Be3pnuMGLEj2tP1CwcKC0lZOXzIyHjqPL0Su0fJnrGPmSdVd6d6jNBho9cdcdhYIGR%2FFFPm36wSicBdiMBqsF4Wf5kieBKVXeJxrCiD9jlgOYvN%2BosNgiemFzRigrSJFSc6IExwhkQO3jPfHj8r8O2WbxJMvO%2Fh%2FP%2FriZnA8wxZyx1QY6sQEUkX0GlPpjCJhLk2X0XcvmtaRm1kXgtb7BqvFMazBqEqvpOFBKhGlk2An2axs7UxxEKSen%2BIBJQAwfMD8a8h%2FP7J0vfwFDzf5r3nC68zXWQ7K7BzC7bQKS6twga3plz5o5rY%2FFLgk%2BnzUn%2FDRca%2F03TIbfYeK5OEHxN6b0M79Myu54QoeuARxAIGJkSnWcorylMu4dChaBm7FT%2Bvcp94LC0%2FvV%2BOFpcGjV0q0aADela5s%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260917T214000Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIAQ3PHCVTYR2FZUBWD%2F20260917%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=fa50db83d5b4f8d0f58b7ac89ac401b1c40ce54bb7ab80fd4077e2572f2f8b0c&amp;hash=c3113a204f58cf9d22f88d41efc0c86e83acaace52844d9893774038198074f8&amp;host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&amp;pii=S0370157312000841&amp;tid=spdf-b2b98b6a-5843-425d-b410-3e1c557ec9ef&amp;sid=30ca49fd3c06444f321827f05dcfb8cd6694gxrqa&amp;type=client&amp;tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&amp;rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&amp;ua=1816045d050c55575a01&amp;rr=a3cb444edeb8cd97&amp;cc=br</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:40:07</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1902.10191">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pareja</foaf:surname>
+                        <foaf:givenName>Aldo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Domeniconi</foaf:surname>
+                        <foaf:givenName>Giacomo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Jie</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ma</foaf:surname>
+                        <foaf:givenName>Tengfei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Suzumura</foaf:surname>
+                        <foaf:givenName>Toyotaro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kanezashi</foaf:surname>
+                        <foaf:givenName>Hiroki</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kaler</foaf:surname>
+                        <foaf:givenName>Tim</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schardl</foaf:surname>
+                        <foaf:givenName>Tao B.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leiserson</foaf:surname>
+                        <foaf:givenName>Charles E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_5"/>
+        <link:link rdf:resource="#item_3"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Social and Information Networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>EvolveGCN: Evolving Graph Convolutional Networks for Dynamic Graphs</dc:title>
+        <dcterms:abstract>Graph representation learning resurges as a trending research subject owing to the widespread use of deep learning for Euclidean data, which inspire various creative designs of neural networks in the non-Euclidean domain, particularly graphs. With the success of these graph neural networks (GNN) in the static setting, we approach further practical scenarios where the graph dynamically evolves. Existing approaches typically resort to node embeddings and use a recurrent neural network (RNN, broadly speaking) to regulate the embeddings and learn the temporal dynamics. These methods require the knowledge of a node in the full time span (including both training and testing) and are less applicable to the frequent change of the node set. In some extreme scenarios, the node sets at different time steps may completely differ. To resolve this challenge, we propose EvolveGCN, which adapts the graph convolutional network (GCN) model along the temporal dimension without resorting to node embeddings. The proposed approach captures the dynamism of the graph sequence through using an RNN to evolve the GCN parameters. Two architectures are considered for the parameter evolution. We evaluate the proposed approach on tasks including link prediction, edge classiﬁcation, and node classiﬁcation. The experimental results indicate a generally higher performance of EvolveGCN compared with related approaches. The code is available at https://github.com/IBM/EvolveGCN.</dcterms:abstract>
+        <dc:date>2019-11-18</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.1902.10191</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1902.10191</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:44:02</dcterms:dateSubmitted>
+        <z:shortTitle>EvolveGCN</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:1902.10191 [cs.LG]</dc:description>
+        <prism:number>arXiv:1902.10191</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_5">
+        <rdf:value>Comment: AAAI 2020. The code is available at https://github.com/IBM/EvolveGCN</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_3">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/3/Pareja et al. - 2019 - EvolveGCN Evolving Graph Convolutional Networks for Dynamic Graphs.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1902.10191</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:44:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://iopscience.iop.org/article/10.1088/1742-5468/2008/10/P10008">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1742-5468"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Blondel</foaf:surname>
+                        <foaf:givenName>Vincent D</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guillaume</foaf:surname>
+                        <foaf:givenName>Jean-Loup</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lambiotte</foaf:surname>
+                        <foaf:givenName>Renaud</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lefebvre</foaf:surname>
+                        <foaf:givenName>Etienne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_7"/>
+        <dc:title>Fast unfolding of communities in large networks</dc:title>
+        <dcterms:abstract>We propose a simple method to extract the community structure of large networks. Our method is a heuristic method that is based on modularity optimization. It is shown to outperform all other known community detection methods in terms of computation time. Moreover, the quality of the communities detected is very good, as measured by the so-called modularity. This is shown ﬁrst by identifying language communities in a Belgian mobile phone network of 2 million customers and by analysing a web graph of 118 million nodes and more than one billion links. The accuracy of our algorithm is also veriﬁed on ad hoc modular networks.</dcterms:abstract>
+        <dc:date>2008-10-01</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://iopscience.iop.org/article/10.1088/1742-5468/2008/10/P10008</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:50:26</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>P10008</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1742-5468">
+        <dc:identifier>DOI 10.1088/1742-5468/2008/10/P10008</dc:identifier>
+        <prism:volume>2008</prism:volume>
+        <dc:title>Journal of Statistical Mechanics: Theory and Experiment</dc:title>
+        <dc:identifier>ISSN 1742-5468</dc:identifier>
+        <prism:number>10</prism:number>
+        <dcterms:alternative>J. Stat. Mech.</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_7">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/7/Blondel et al. - 2008 - Fast unfolding of communities in large networks.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://iopscience.iop.org/article/10.1088/1742-5468/2008/10/P10008/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:50:25</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://dx.plos.org/10.1371/journal.pone.0196087">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1932-6203"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shao</foaf:surname>
+                        <foaf:givenName>Chengcheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hui</foaf:surname>
+                        <foaf:givenName>Pik-Mai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Lei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jiang</foaf:surname>
+                        <foaf:givenName>Xinwen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Flammini</foaf:surname>
+                        <foaf:givenName>Alessandro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Menczer</foaf:surname>
+                        <foaf:givenName>Filippo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ciampaglia</foaf:surname>
+                        <foaf:givenName>Giovanni Luca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Barrat</foaf:surname>
+                        <foaf:givenName>Alain</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <link:link rdf:resource="#item_9"/>
+        <dc:title>Anatomy of an online misinformation network</dc:title>
+        <dcterms:abstract>Massive amounts of fake news and conspiratorial content have spread over social media before and after the 2016 US Presidential Elections despite intense fact-checking efforts. How do the spread of misinformation and fact-checking compete? What are the structural and dynamic characteristics of the core of the misinformation diffusion network, and who are its main purveyors? How to reduce the overall amount of misinformation? To explore these questions we built Hoaxy, an open platform that enables large-scale, systematic studies of how misinformation and fact-checking spread and compete on Twitter. Hoaxy captures public tweets that include links to articles from low-credibility and fact-checking sources. We perform k-core decomposition on a diffusion network obtained from two million retweets produced by several hundred thousand accounts over the six months before the election. As we move from the periphery to the core of the network, fact-checking nearly disappears, while social bots proliferate. The number of users in the main core reaches equilibrium around the time of the election, with limited churn and increasingly dense connections. We conclude by quantifying how effectively the network can be disrupted by penalizing the most central nodes. These findings provide a first look at the anatomy of a massive online misinformation diffusion network.</dcterms:abstract>
+        <dc:date>2018-4-27</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dx.plos.org/10.1371/journal.pone.0196087</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:51:01</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>e0196087</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1932-6203">
+        <dc:identifier>DOI 10.1371/journal.pone.0196087</dc:identifier>
+        <prism:volume>13</prism:volume>
+        <dc:title>PLOS ONE</dc:title>
+        <dc:identifier>ISSN 1932-6203</dc:identifier>
+        <prism:number>4</prism:number>
+        <dcterms:alternative>PLoS ONE</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_9">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/9/Shao et al. - 2018 - Anatomy of an online misinformation network.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0196087&amp;type=printable</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:50:59</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-6822-3">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dcterms:isPartOf>
+                   <bib:Series><dc:title>WSDM '20</dc:title></bib:Series>
+                </dcterms:isPartOf>
+                <dc:identifier>DOI 10.1145/3336191.3371845</dc:identifier>
+                <dc:identifier>ISBN 978-1-4503-6822-3</dc:identifier>
+                <dc:title>Proceedings of the 13th International Conference on Web Search and Data Mining</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>Association for Computing Machinery</foaf:name>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>New York, NY, USA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sankar</foaf:surname>
+                        <foaf:givenName>Aravind</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wu</foaf:surname>
+                        <foaf:givenName>Yanhong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gou</foaf:surname>
+                        <foaf:givenName>Liang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Wei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yang</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <dc:title>DySAT: Deep Neural Representation Learning on Dynamic Graphs via Self-Attention Networks</dc:title>
+        <dcterms:abstract>Learning node representations in graphs is important for many applications such as link prediction, node classification, and community detection. Existing graph representation learning methods primarily target static graphs while many real-world graphs evolve over time. Complex time-varying graph structures make it challenging to learn informative node representations over time.  We present Dynamic Self-Attention Network (DySAT), a novel neural architecture that learns node representations to capture dynamic graph structural evolution. Specifically, DySAT computes node representations through joint self-attention along the two dimensions of structural neighborhood and temporal dynamics. Compared with state-of-the-art recurrent methods modeling graph evolution, dynamic self-attention is efficient, while achieving consistently superior performance. We conduct link prediction experiments on two graph types: communication networks and bipartite rating networks. Experimental results demonstrate significant performance gains for DySAT over several state-of-the-art graph embedding baselines, in both single and multi-step link prediction tasks. Furthermore, our ablation study validates the effectiveness of jointly modeling structural and temporal self-attention.</dcterms:abstract>
+        <dc:date>Janeiro 22, 2020</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/3336191.3371845</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17</dcterms:dateSubmitted>
+        <z:shortTitle>DySAT</z:shortTitle>
+        <z:libraryCatalog>ACM Digital Library</z:libraryCatalog>
+        <bib:pages>519–527</bib:pages>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/12/Sankar et al. - 2020 - DySAT Deep Neural Representation Learning on Dynamic Graphs via Self-Attention Networks.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3336191.3371845?download=true</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:51:13</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://ojs.aaai.org/index.php/ICWSM/article/view/18075">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2334-0770"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pacheco</foaf:surname>
+                        <foaf:givenName>Diogo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hui</foaf:surname>
+                        <foaf:givenName>Pik-Mai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Torres-Lugo</foaf:surname>
+                        <foaf:givenName>Christopher</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Truong</foaf:surname>
+                        <foaf:givenName>Bao Tran</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Flammini</foaf:surname>
+                        <foaf:givenName>Alessandro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Menczer</foaf:surname>
+                        <foaf:givenName>Filippo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_14"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>communities identification</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Credibility of online content</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>expertise and authority discovery</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Qualitative and quantitative studies of social media</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>recommendation systems</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>reputation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Social network analysis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Trust</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Uncovering Coordinated Networks on Social Media: Methods and Case Studies</dc:title>
+        <dcterms:abstract>Coordinated campaigns are used to influence and manipulate social media platforms and their users, a critical challenge to the free exchange of information online. Here we introduce a general, unsupervised network-based methodology to uncover groups of accounts that are likely coordinated. The proposed method constructs coordination networks based on arbitrary behavioral traces shared among accounts. We present five case studies of influence campaigns, four of which in the diverse contexts of U.S. elections, Hong Kong protests, the Syrian civil war, and cryptocurrency manipulation. In each of these cases, we detect networks of coordinated Twitter accounts by examining their identities, images, hashtag sequences, retweets, or temporal patterns. The proposed approach proves to be broadly applicable to uncover different kinds of coordination across information warfare scenarios.</dcterms:abstract>
+        <dc:date>2021-05-22</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ojs.aaai.org/index.php/ICWSM/article/view/18075</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:53:51</dcterms:dateSubmitted>
+        <z:shortTitle>Uncovering Coordinated Networks on Social Media</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>ojs.aaai.org</z:libraryCatalog>
+        <dc:rights>Copyright (c) 2021 Association for the Advancement of Artificial Intelligence</dc:rights>
+        <bib:pages>455-466</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2334-0770">
+        <dc:identifier>DOI 10.1609/icwsm.v15i1.18075</dc:identifier>
+        <prism:volume>15</prism:volume>
+        <dc:title>Proceedings of the International AAAI Conference on Web and Social Media</dc:title>
+        <dc:identifier>ISSN 2334-0770</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_14">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/14/Pacheco et al. - 2021 - Uncovering Coordinated Networks on Social Media Methods and Case Studies.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ojs.aaai.org/index.php/ICWSM/article/download/18075/17878</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:53:54</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-7024-0">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1145/3366424.3385775</dc:identifier>
+                <dc:identifier>ISBN 978-1-4503-7024-0</dc:identifier>
+                <dc:title>Companion Proceedings of the Web Conference 2020</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>ACM</foaf:name>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Taipei Taiwan</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pacheco</foaf:surname>
+                        <foaf:givenName>Diogo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Flammini</foaf:surname>
+                        <foaf:givenName>Alessandro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Menczer</foaf:surname>
+                        <foaf:givenName>Filippo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_17"/>
+        <dc:title>Unveiling Coordinated Groups Behind White Helmets Disinformation</dc:title>
+        <dcterms:abstract>Propaganda, disinformation, manipulation, and polarization are the modern illnesses of a society increasingly dependent on social media as a source of news. In this paper, we explore the disinformation campaign, sponsored by Russia and allies, against the Syria Civil Defense (a.k.a. the White Helmets). We unveil coordinated groups using automatic retweets and content duplication to promote narratives and/or accounts. The results also reveal distinct promoting strategies, ranging from the small groups sharing the exact same text repeatedly, to complex “news website factories” where dozens of accounts synchronously spread the same news from multiple sites.</dcterms:abstract>
+        <dc:date>2020-04-20</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/3366424.3385775</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:56:05</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>611-616</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+               <dc:title>WWW '20: The Web Conference 2020</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_17">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/17/Pacheco et al. - 2020 - Unveiling Coordinated Groups Behind White Helmets Disinformation.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3366424.3385775</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:56:03</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-7688-4">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1145/3400806.3400817</dc:identifier>
+                <dc:identifier>ISBN 978-1-4503-7688-4</dc:identifier>
+                <dc:title>International Conference on Social Media and Society</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>ACM</foaf:name>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Toronto ON Canada</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Giglietto</foaf:surname>
+                        <foaf:givenName>Fabio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Righetti</foaf:surname>
+                        <foaf:givenName>Nicola</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rossi</foaf:surname>
+                        <foaf:givenName>Luca</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Marino</foaf:surname>
+                        <foaf:givenName>Giada</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_19"/>
+        <dc:title>Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook</dc:title>
+        <dcterms:abstract>Despite widespread concern over the role played by disinformation during recent electoral processes, the intrinsic elusiveness of the subject hinders efforts aimed at estimating its prevalence and effect. While there has been proliferation of attempts to define, understand and fight the spread of problematic information in contemporary media ecosystems, most of these attempts focus on detecting false content and/or bad actors. For instance, several existing studies rely on lists of problematic content or news media sources compiled by fact-checkers. However, these lists may quickly become obsolete leading to unreliable estimates. Using media manipulation as a frame, along with a revised version of the “coordinated inauthentic behavior” original definition, in this paper, we argue for a wider ecological focus. Leveraging a method designed to detect “coordinated links sharing behavior” (CLSB), we introduce and assess an approach aimed at creating and keeping lists of potentially problematic sources updated by analyzing the URLs shared on Facebook by public groups, pages, and verified profiles. We show how CLSB is consistently associated with higher risks of encountering problematic news sources across three different datasets of news stories and can be thus used as a signal to support manual and automatic detection of problematic information.</dcterms:abstract>
+        <dc:date>2020-07-22</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/3400806.3400817</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:56:43</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>85-91</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>SMSociety'20: International Conference on Social Media and Society</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_19">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/19/Giglietto et al. - 2020 - Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Faceb.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3400806.3400817</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:56:41</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://ojs.aaai.org/index.php/ICWSM/article/view/14772">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1609/icwsm.v10i1.14772</dc:identifier>
+                <prism:volume>10</prism:volume>
+                <dc:title>Proceedings of the International AAAI Conference on Web and Social Media</dc:title>
+                <dc:identifier>ISSN 2334-0770</dc:identifier>
+                <prism:number>1</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ferrara</foaf:surname>
+                        <foaf:givenName>Emilio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Varol</foaf:surname>
+                        <foaf:givenName>Onur</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Menczer</foaf:surname>
+                        <foaf:givenName>Filippo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Flammini</foaf:surname>
+                        <foaf:givenName>Alessandro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_22"/>
+        <dc:title>Detection of Promoted Social Media Campaigns</dc:title>
+        <dcterms:abstract>Information spreading on social media contributes to the formation of collective opinions. Millions of social media users are exposed every day to popular memes — some generated organically by grassroots activity, others sustained by advertising, information campaigns or more or less transparent coordinated efforts. While most information campaigns are benign, some may have nefarious purposes, including terrorist propaganda, political astroturf, and financial market manipulation. This poses a crucial technological challenge with deep social implications: can we detect whether the spreading of a viral meme is being sustained by a promotional campaign? Here we study trending memes that attract attention either organically, or by means of advertisement. We designed a machine learning framework capable to detect promoted campaigns and separate them from organic ones in their early stages. Using a dataset of millions of posts associated with trending Twitter hashtags, we prove that remarkably accurate early detection is possible, achieving 95% AUC score. Feature selection analysis reveals that network diffusion patterns and content cues are powerful early detection signals.</dcterms:abstract>
+        <dc:date>2016</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ojs.aaai.org/index.php/ICWSM/article/view/14772</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:57:35</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>ojs.aaai.org</z:libraryCatalog>
+        <dc:rights>Copyright (c) 2021 Proceedings of the International AAAI Conference on Web and Social Media</dc:rights>
+        <bib:pages>563-566</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_22">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/22/Ferrara et al. - 2016 - Detection of Promoted Social Media Campaigns.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ojs.aaai.org/index.php/ICWSM/article/download/14772/14621</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 21:57:37</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://journals.sagepub.com/doi/10.1177/20563051231196866">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2056-3051,%202056-3051"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Giglietto</foaf:surname>
+                        <foaf:givenName>Fabio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Marino</foaf:surname>
+                        <foaf:givenName>Giada</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mincigrucci</foaf:surname>
+                        <foaf:givenName>Roberto</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stanziano</foaf:surname>
+                        <foaf:givenName>Anna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_28"/>
+        <dc:title>A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election</dc:title>
+        <dcterms:abstract>Information operations that target public opinion often exploit breaking news, crises, and elections by using coordinated social media actors to disseminate problematic content. These events often reveal the relationships between actors, prompting the creation of lists of malicious actors and news sources. However, relying on outdated lists may underestimate the prevalence and impact of such operations. This article presents a novel workflow to detect, monitor, and update lists of coordinated social media actors during and beyond peak activity periods. Using this approach, known problematic actors are constantly monitored, allowing the detection of new actors and the update of the monitored pool. The workflow was applied to the 2022 Italian snap election, leveraging previous research on coordinated inauthentic behavior during the 2018 and 2019 Italian elections. The initial list of 435 coordinated accounts was monitored, surfacing 1,022 overly shared or commented political posts, 272 coordinated links, and detecting 66 political and 554 generic coordinated accounts not previously listed. Three case studies were identified: one politically motivated, one click-economy driven, and one religiously motivated operation. The article discusses the implications of this approach, its limitations, and potential future work.</dcterms:abstract>
+        <dc:date>07/2023</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.sagepub.com/doi/10.1177/20563051231196866</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:02:41</dcterms:dateSubmitted>
+        <z:shortTitle>A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>20563051231196866</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2056-3051,%202056-3051">
+        <dc:identifier>DOI 10.1177/20563051231196866</dc:identifier>
+        <prism:volume>9</prism:volume>
+        <dc:title>Social Media + Society</dc:title>
+        <dc:identifier>ISSN 2056-3051, 2056-3051</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Social Media + Society</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_28">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/28/Giglietto et al. - 2023 - A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time Th.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.sagepub.com/doi/pdf/10.1177/20563051231196866</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:02:40</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://link.aps.org/doi/10.1103/PhysRevE.76.026107">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1539-3755,%201550-2376"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fagiolo</foaf:surname>
+                        <foaf:givenName>Giorgio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_30"/>
+        <dc:title>Clustering in complex directed networks</dc:title>
+        <dc:date>2007-8-16</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.aps.org/doi/10.1103/PhysRevE.76.026107</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:04:33</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:rights>http://link.aps.org/licenses/aps-default-license</dc:rights>
+        <bib:pages>026107</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1539-3755,%201550-2376">
+        <dc:identifier>DOI 10.1103/PhysRevE.76.026107</dc:identifier>
+        <prism:volume>76</prism:volume>
+        <dc:title>Physical Review E</dc:title>
+        <dc:identifier>ISSN 1539-3755, 1550-2376</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>Phys. Rev. E</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_30">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/30/Fagiolo - 2007 - Clustering in complex directed networks.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.aps.org/pre/pdf/10.1103/PhysRevE.76.026107</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:04:31</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2503.00599">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gopalakrishnan</foaf:surname>
+                        <foaf:givenName>Atul Anand</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hossain</foaf:surname>
+                        <foaf:givenName>Jakir</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Elmas</foaf:surname>
+                        <foaf:givenName>Tugrulcan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sariyuce</foaf:surname>
+                        <foaf:givenName>Ahmet Erdem</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_37"/>
+        <link:link rdf:resource="#item_33"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Social and Information Networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Large Engagement Networks for Classifying Coordinated Campaigns and Organic Twitter Trends</dc:title>
+        <dcterms:abstract>Social media users and inauthentic accounts, such as bots, may coordinate in promoting their topics. Such topics may give the impression that they are organically popular among the public, even though they are astroturfing campaigns that are centrally managed. It is challenging to predict if a topic is organic or a coordinated campaign due to the lack of reliable ground truth. In this paper, we create such ground truth by detecting the campaigns promoted by ephemeral astroturfing attacks. These attacks push any topic to Twitter’s (X) trends list by employing bots that tweet in a coordinated manner in a short period and then immediately delete their tweets. We manually curate a dataset of organic Twitter trends. We then create engagement networks out of these datasets which can serve as a challenging testbed for graph classification task to distinguish between campaigns and organic trends. Engagement networks consist of users as nodes and engagements as edges (retweets, replies, and quotes) between users. We release the engagement networks for 179 campaigns and 135 non-campaigns, and also provide finer-grain labels to characterize the type of the campaigns and non-campaigns. Our dataset, LEN (Large Engagement Networks), is available in the URL below. In comparison to traditional graph classification datasets, which are small with tens of nodes and hundreds of edges at most, graphs in LEN are larger. The average graph in LEN has ∼11K nodes and ∼23K edges. We show that state-of-the-art GNN methods give only mediocre results for campaign vs. non-campaign and campaign type classification on LEN. LEN offers a unique and challenging playfield for the graph classification problem. We believe that LEN will help advance the frontiers of graph classification techniques on large networks and also provide an interesting use case in terms of distinguishing coordinated campaigns and organic trends.</dcterms:abstract>
+        <dc:date>2025-03-28</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.2503.00599</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2503.00599</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:06:05</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:2503.00599 [cs.SI]</dc:description>
+        <prism:number>arXiv:2503.00599</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_37">
+       <rdf:value>Comment: 14 Pages</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_33">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/33/Gopalakrishnan et al. - 2025 - Large Engagement Networks for Classifying Coordinated Campaigns and Organic Twitter Trends.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2503.00599</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:05:47</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1706.02216">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hamilton</foaf:surname>
+                        <foaf:givenName>William L.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ying</foaf:surname>
+                        <foaf:givenName>Rex</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leskovec</foaf:surname>
+                        <foaf:givenName>Jure</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_42"/>
+        <link:link rdf:resource="#item_40"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Social and Information Networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Inductive Representation Learning on Large Graphs</dc:title>
+        <dcterms:abstract>Low-dimensional embeddings of nodes in large graphs have proved extremely useful in a variety of prediction tasks, from content recommendation to identifying protein functions. However, most existing approaches require that all nodes in the graph are present during training of the embeddings; these previous approaches are inherently transductive and do not naturally generalize to unseen nodes. Here we present GraphSAGE, a general inductive framework that leverages node feature information (e.g., text attributes) to efﬁciently generate node embeddings for previously unseen data. Instead of training individual embeddings for each node, we learn a function that generates embeddings by sampling and aggregating features from a node’s local neighborhood. Our algorithm outperforms strong baselines on three inductive node-classiﬁcation benchmarks: we classify the category of unseen nodes in evolving information graphs based on citation and Reddit post data, and we show that our algorithm generalizes to completely unseen graphs using a multi-graph dataset of protein-protein interactions.</dcterms:abstract>
+        <dc:date>2018-09-10</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.1706.02216</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1706.02216</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:08:30</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:1706.02216 [cs.SI]</dc:description>
+        <prism:number>arXiv:1706.02216</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_42">
+        <rdf:value>Comment: Published in NIPS 2017; version with full appendix and minor corrections</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_40">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/40/Hamilton et al. - 2018 - Inductive Representation Learning on Large Graphs.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1706.02216</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:08:29</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2007.03316">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Han</foaf:surname>
+                        <foaf:givenName>Yi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Karunasekera</foaf:surname>
+                        <foaf:givenName>Shanika</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Leckie</foaf:surname>
+                        <foaf:givenName>Christopher</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_45"/>
+        <link:link rdf:resource="#item_43"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Social and Information Networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Graph Neural Networks with Continual Learning for Fake News Detection from Social Media</dc:title>
+        <dcterms:abstract>Although significant effort has been applied to fact-checking, the prevalence of fake news over social media, which has profound impact on justice, public trust and our society as a whole, remains a serious problem. In this work, we focus on propagation-based fake news detection, as recent studies have demonstrated that fake news and real news spread differently online. Specifically, considering the capability of graph neural networks (GNNs) in dealing with non-Euclidean data, we use GNNs to differentiate between the propagation patterns of fake and real news on social media. In particular, we concentrate on two questions: (1) Without relying on any text information, e.g., tweet content, replies and user descriptions, how accurately can GNNs identify fake news? Machine learning models are known to be vulnerable to adversarial attacks, and avoiding the dependence on text-based features can make the model less susceptible to the manipulation of advanced fake news fabricators. (2) How to deal with new, unseen data? In other words, how does a GNN trained on a given dataset perform on a new and potentially vastly different dataset? If it achieves unsatisfactory performance, how do we solve the problem without re-training the model on the entire data from scratch, which would become prohibitively expensive in practice as the data volumes grow? We study the above questions on two datasets with thousands of labelled news items, and our results show that: (1) GNNs can achieve comparable or superior performance without any text information to state-of-the-art methods. (2) GNNs trained on a given dataset may perform poorly on new, unseen data, and direct incremental training cannot solve the problem—this issue has not been addressed in the previous work that applies GNNs for fake news detection. In order to solve the problem, we propose a method that achieves balanced performance on both existing and new datasets, by using techniques from continual learning to train GNNs incrementally.</dcterms:abstract>
+        <dc:date>2020-08-14</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.2007.03316</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2007.03316</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:09:36</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:2007.03316 [cs.SI]</dc:description>
+        <prism:number>arXiv:2007.03316</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_45">
+       <rdf:value>Comment: 9 pages, 7 figures, 2 tables</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_43">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/43/Han et al. - 2020 - Graph Neural Networks with Continual Learning for Fake News Detection from Social Media.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2007.03316</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:09:34</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2102.05152">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yuan</foaf:surname>
+                        <foaf:givenName>Hao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yu</foaf:surname>
+                        <foaf:givenName>Haiyang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Jie</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Kang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ji</foaf:surname>
+                        <foaf:givenName>Shuiwang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_48"/>
+        <link:link rdf:resource="#item_46"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Artificial Intelligence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>On Explainability of Graph Neural Networks via Subgraph Explorations</dc:title>
+        <dcterms:abstract>We consider the problem of explaining the predictions of graph neural networks (GNNs), which otherwise are considered as black boxes. Existing methods invariably focus on explaining the importance of graph nodes or edges but ignore the substructures of graphs, which are more intuitive and human-intelligible. In this work, we propose a novel method, known as SubgraphX, to explain GNNs by identifying important subgraphs. Given a trained GNN model and an input graph, our SubgraphX explains its predictions by efﬁciently exploring different subgraphs with Monte Carlo tree search. To make the tree search more effective, we propose to use Shapley values as a measure of subgraph importance, which can also capture the interactions among different subgraphs. To expedite computations, we propose efﬁcient approximation schemes to compute Shapley values for graph data. Our work represents the ﬁrst attempt to explain GNNs via identifying subgraphs explicitly and directly. Experimental results show that our SubgraphX achieves signiﬁcantly improved explanations, while keeping computations at a reasonable level.</dcterms:abstract>
+        <dc:date>2021-05-31</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.2102.05152</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2102.05152</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:10:03</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:2102.05152 [cs.LG]</dc:description>
+        <prism:number>arXiv:2102.05152</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_48">
+       <rdf:value>Comment: Accepted by ICML 2021</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_46">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/46/Yuan et al. - 2021 - On Explainability of Graph Neural Networks via Subgraph Explorations.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2102.05152</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:10:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-59593-383-6">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1145/1143844.1143874</dc:identifier>
+                <dc:identifier>ISBN 978-1-59593-383-6</dc:identifier>
+                <dc:title>Proceedings of the 23rd international conference on Machine learning  - ICML '06</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>ACM Press</foaf:name>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Pittsburgh, Pennsylvania</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Davis</foaf:surname>
+                        <foaf:givenName>Jesse</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goadrich</foaf:surname>
+                        <foaf:givenName>Mark</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_50"/>
+        <dc:title>The relationship between Precision-Recall and ROC curves</dc:title>
+        <dcterms:abstract>Receiver Operator Characteristic (ROC) curves are commonly used to present results for binary decision problems in machine learning. However, when dealing with highly skewed datasets, Precision-Recall (PR) curves give a more informative picture of an algorithm’s performance. We show that a deep connection exists between ROC space and PR space, such that a curve dominates in ROC space if and only if it dominates in PR space. A corollary is the notion of an achievable PR curve, which has properties much like the convex hull in ROC space; we show an eﬃcient algorithm for computing this curve. Finally, we also note diﬀerences in the two types of curves are signiﬁcant for algorithm design. For example, in PR space it is incorrect to linearly interpolate between points. Furthermore, algorithms that optimize the area under the ROC curve are not guaranteed to optimize the area under the PR curve.</dcterms:abstract>
+        <dc:date>2006</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://portal.acm.org/citation.cfm?doid=1143844.1143874</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:13:55</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:rights>https://www.acm.org/publications/policies/copyright_policy#Background</dc:rights>
+        <bib:pages>233-240</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+               <dc:title>the 23rd international conference</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_50">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/50/Davis e Goadrich - 2006 - The relationship between Precision-Recall and ROC curves.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/1143844.1143874</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:13:52</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-0637-9">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1145/1963192.1963301</dc:identifier>
+                <dc:identifier>ISBN 978-1-4503-0637-9</dc:identifier>
+                <dc:title>Proceedings of the 20th international conference companion on World wide web</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>ACM</foaf:name>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Hyderabad India</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ratkiewicz</foaf:surname>
+                        <foaf:givenName>Jacob</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Conover</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Meiss</foaf:surname>
+                        <foaf:givenName>Mark</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gonçalves</foaf:surname>
+                        <foaf:givenName>Bruno</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Patil</foaf:surname>
+                        <foaf:givenName>Snehal</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Flammini</foaf:surname>
+                        <foaf:givenName>Alessandro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Menczer</foaf:surname>
+                        <foaf:givenName>Filippo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_53"/>
+        <dc:title>Truthy: mapping the spread of astroturf in microblog streams</dc:title>
+        <dcterms:abstract>Online social media are complementing and in some cases replacing person-to-person social interaction and redeﬁning the diffusion of information. In particular, microblogs have become crucial grounds on which public relations, marketing, and political battles are fought. We demonstrate a web service that tracks political memes in Twitter and helps detect astroturﬁng, smear campaigns, and other misinformation in the context of U.S. political elections. We also present some cases of abusive behaviors uncovered by our service. Our web service is based on an extensible framework that will enable the real-time analysis of meme diffusion in social media by mining, visualizing, mapping, classifying, and modeling massive streams of public microblogging events.</dcterms:abstract>
+        <dc:date>2011-03-28</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/1963192.1963301</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:14:07</dcterms:dateSubmitted>
+        <z:shortTitle>Truthy</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>249-252</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>WWW '11: 20th International World Wide Web Conference</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_53">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/53/Ratkiewicz et al. - 2011 - Truthy mapping the spread of astroturf in microblog streams.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/1963192.1963301</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:14:05</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2408.01257">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mannocci</foaf:surname>
+                        <foaf:givenName>Lorenzo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mazza</foaf:surname>
+                        <foaf:givenName>Michele</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Monreale</foaf:surname>
+                        <foaf:givenName>Anna</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tesconi</foaf:surname>
+                        <foaf:givenName>Maurizio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cresci</foaf:surname>
+                        <foaf:givenName>Stefano</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_55"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Social and Information Networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Artificial Intelligence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Computers and Society</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Human-Computer Interaction</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Detection and Characterization of Coordinated Online Behavior: A Survey</dc:title>
+        <dcterms:abstract>Coordination is a fundamental aspect of life. The advent of social media has made it integral also to online human interactions, such as those that characterize thriving online communities and social movements. At the same time, coordination is also core to effective disinformation, manipulation, and hate campaigns. This survey collects, categorizes, and critically discusses the body of work produced as a result of the growing interest on coordinated online behavior. We reconcile industry and academic definitions, propose a comprehensive framework to study coordinated online behavior, and review and critically discuss the existing detection and characterization methods. Our analysis identifies open challenges and promising directions of research, serving as a guide for scholars, practitioners, and policymakers in understanding and addressing the complexities inherent to online coordination.</dcterms:abstract>
+        <dc:date>2026-04-10</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.2408.01257</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2408.01257</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:16:44</dcterms:dateSubmitted>
+        <z:shortTitle>Detection and Characterization of Coordinated Online Behavior</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:2408.01257 [cs.SI]</dc:description>
+        <prism:number>arXiv:2408.01257</prism:number>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_55">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/55/Mannocci et al. - 2026 - Detection and Characterization of Coordinated Online Behavior A Survey.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2408.01257</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:16:42</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-8332-5">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1145/3447548.3467391</dc:identifier>
+                <dc:identifier>ISBN 978-1-4503-8332-5</dc:identifier>
+                <dc:title>Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>ACM</foaf:name>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Virtual Event Singapore</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sharma</foaf:surname>
+                        <foaf:givenName>Karishma</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Yizhou</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ferrara</foaf:surname>
+                        <foaf:givenName>Emilio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liu</foaf:surname>
+                        <foaf:givenName>Yan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_57"/>
+        <dc:title>Identifying Coordinated Accounts on Social Media through Hidden Influence and Group Behaviours</dc:title>
+        <dcterms:abstract>Disinformation campaigns on social media, involving coordinated activities from malicious accounts towards manipulating public opinion, have become increasingly prevalent. Existing approaches to detect coordinated accounts either make very strict assumptions about coordinated behaviours, or require part of the malicious accounts in the coordinated group to be revealed in order to detect the rest. To address these drawbacks, we propose a generative model, AMDN-HAGE (Attentive Mixture Density Network with Hidden Account Group Estimation) which jointly models account activities and hidden group behaviours based on Temporal Point Processes (TPP) and Gaussian Mixture Model (GMM), to capture inherent characteristics of coordination which is, accounts that coordinate must strongly influence each other’s activities, and collectively appear anomalous from normal accounts. To address the challenges of optimizing the proposed model, we provide a bilevel optimization algorithm with theoretical guarantee on convergence. We verified the effectiveness of the proposed method and training algorithm on real-world social network data collected from Twitter related to coordinated campaigns from Russia’s Internet Research Agency targeting the 2016 U.S. Presidential Elections, and to identify coordinated campaigns related to the COVID-19 pandemic. Leveraging the learned model, we find that the average influence between coordinated account pairs is the highest. On COVID-19, we found coordinated group spreading anti-vaccination, anti-masks conspiracies that suggest the pandemic is a hoax and political scam.</dcterms:abstract>
+        <dc:date>2021-08-14</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/3447548.3467391</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:17:17</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>1441-1451</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>KDD '21: The 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_57">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/57/Sharma et al. - 2021 - Identifying Coordinated Accounts on Social Media through Hidden Influence and Group Behaviours.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3447548.3467391</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:17:14</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-8084-3">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1145/3411495.3421363</dc:identifier>
+                <dc:identifier>ISBN 978-1-4503-8084-3</dc:identifier>
+                <dc:title>Proceedings of the 2020 ACM SIGSAC Conference on Cloud Computing Security Workshop</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>ACM</foaf:name>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Virtual Event USA</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vargas</foaf:surname>
+                        <foaf:givenName>Luis</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Emami</foaf:surname>
+                        <foaf:givenName>Patrick</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Traynor</foaf:surname>
+                        <foaf:givenName>Patrick</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_59"/>
+        <dc:title>On the Detection of Disinformation Campaign Activity with Network Analysis</dc:title>
+        <dcterms:abstract>Online manipulation of information has become more prevalent in recent years as state-sponsored disinformation campaigns seek to influence and polarize political topics through massive coordinated efforts. In the process, these efforts leave behind artifacts, which researchers have leveraged to analyze the tactics employed by disinformation campaigns after they are taken down. Coordination network analysis has proven helpful for learning about how disinformation campaigns operate; however, the usefulness of these forensic tools as a detection mechanism is still an open question. In this paper, we explore the use of coordination network analysis to generate features for distinguishing the activity of a disinformation campaign from legitimate Twitter activity. Doing so would provide more evidence to human analysts as they consider takedowns. We create a time series of daily coordination networks for both Twitter disinformation campaigns and legitimate Twitter communities, and train a binary classifier based on statistical features extracted from these networks. Our results show that the classifier can predict future coordinated activity of known disinformation campaigns with high accuracy (𝐹 1 = 0.98). On the more challenging task of out-of-distribution activity classification, the performance drops yet is still promising (𝐹 1 = 0.71), mainly due to an increase in the false positive rate. By doing this analysis, we show that while coordination patterns could be useful for providing evidence of disinformation activity, further investigation is needed to improve upon this method before deployment at scale.</dcterms:abstract>
+        <dc:date>2020-11-09</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/3411495.3421363</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:18:01</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>133-146</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>CCS '20: 2020 ACM SIGSAC Conference on Computer and Communications Security</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_59">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/59/Vargas et al. - 2020 - On the Detection of Disinformation Campaign Activity with Network Analysis.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3411495.3421363</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:17:58</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pnas.org/doi/full/10.1073/pnas.0601602103">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0027-8424,%201091-6490"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Newman</foaf:surname>
+                        <foaf:givenName>M. E. J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_61"/>
+        <dc:title>Modularity and community structure in networks</dc:title>
+        <dcterms:abstract>Many networks of interest in the sciences, including social networks, computer networks, and metabolic and regulatory networks, are found to divide naturally into communities or modules. The problem of detecting and characterizing this community structure is one of the outstanding issues in the study of networked systems. One highly effective approach is the optimization of the quality function known as “modularity” over the possible divisions of a network. Here I show that the modularity can be expressed in terms of the eigenvectors of a characteristic matrix for the network, which I call the modularity matrix, and that this expression leads to a spectral algorithm for community detection that returns results of demonstrably higher quality than competing methods in shorter running times. I illustrate the method with applications to several published network data sets.</dcterms:abstract>
+        <dc:date>2006-06-06</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pnas.org/doi/full/10.1073/pnas.0601602103</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:18:56</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>8577-8582</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0027-8424,%201091-6490">
+        <dc:identifier>DOI 10.1073/pnas.0601602103</dc:identifier>
+        <prism:volume>103</prism:volume>
+        <dc:title>Proceedings of the National Academy of Sciences</dc:title>
+        <dc:identifier>ISSN 0027-8424, 1091-6490</dc:identifier>
+        <prism:number>23</prism:number>
+        <dcterms:alternative>Proc. Natl. Acad. Sci. U.S.A.</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_61">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/61/Newman - 2006 - Modularity and community structure in networks.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.pnas.org/doi/pdf/10.1073/pnas.0601602103</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:18:53</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-017-0111-y">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2193-1127"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Varol</foaf:surname>
+                        <foaf:givenName>Onur</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ferrara</foaf:surname>
+                        <foaf:givenName>Emilio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Menczer</foaf:surname>
+                        <foaf:givenName>Filippo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Flammini</foaf:surname>
+                        <foaf:givenName>Alessandro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_63"/>
+        <dc:title>Early detection of promoted campaigns on social media</dc:title>
+        <dcterms:abstract>Social media expose millions of users every day to information campaigns - some emerging organically from grassroots activity, others sustained by advertising or other coordinated eﬀorts. These campaigns contribute to the shaping of collective opinions. While most information campaigns are benign, some may be deployed for nefarious purposes, including terrorist propaganda, political astroturf, and ﬁnancial market manipulation. It is therefore important to be able to detect whether a meme is being artiﬁcially promoted at the very moment it becomes wildly popular. This problem has important social implications and poses numerous technical challenges. As a ﬁrst step, here we focus on discriminating between trending memes that are either organic or promoted by means of advertisement. The classiﬁcation is not trivial: ads cause bursts of attention that can be easily mistaken for those of organic trends. We designed a machine learning framework to classify memes that have been labeled as trending on Twitter. After trending, we can rely on a large volume of activity data. Early detection, occurring immediately at trending time, is a more challenging problem due to the minimal volume of activity data that is available prior to trending. Our supervised learning framework exploits hundreds of time-varying features to capture changing network and diﬀusion patterns, content and sentiment information, timing signals, and user meta-data. We explore diﬀerent methods for encoding feature time series. Using millions of tweets containing trending hashtags, we achieve 75% AUC score for early detection, increasing to above 95% after trending. We evaluate the robustness of the algorithms by introducing random temporal shifts on the trend time series. Feature selection analysis reveals that content cues provide consistently useful signals; user features are more informative for early detection, while network and timing features are more helpful once more data is available.</dcterms:abstract>
+        <dc:date>12/2017</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-017-0111-y</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:20:06</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>13</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2193-1127">
+        <dc:identifier>DOI 10.1140/epjds/s13688-017-0111-y</dc:identifier>
+        <prism:volume>6</prism:volume>
+        <dc:title>EPJ Data Science</dc:title>
+        <dc:identifier>ISSN 2193-1127</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>EPJ Data Sci.</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_63">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/63/Varol et al. - 2017 - Early detection of promoted campaigns on social media.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/content/pdf/10.1140/epjds/s13688-017-0111-y</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:20:04</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1703.03107">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Varol</foaf:surname>
+                        <foaf:givenName>Onur</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ferrara</foaf:surname>
+                        <foaf:givenName>Emilio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Davis</foaf:surname>
+                        <foaf:givenName>Clayton A.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Menczer</foaf:surname>
+                        <foaf:givenName>Filippo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Flammini</foaf:surname>
+                        <foaf:givenName>Alessandro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_69"/>
+        <link:link rdf:resource="#item_67"/>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Social and Information Networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Online Human-Bot Interactions: Detection, Estimation, and Characterization</dc:title>
+        <dcterms:abstract>Increasing evidence suggests that a growing amount of social media content is generated by autonomous entities known as social bots. In this work we present a framework to detect such entities on Twitter. We leverage more than a thousand features extracted from public data and meta-data about users: friends, tweet content and sentiment, network patterns, and activity time series. We benchmark the classiﬁcation framework by using a publicly available dataset of Twitter bots. This training data is enriched by a manually annotated collection of active Twitter users that include both humans and bots of varying sophistication. Our models yield high accuracy and agreement with each other and can detect bots of different nature. Our estimates suggest that between 9% and 15% of active Twitter accounts are bots. Characterizing ties among accounts, we observe that simple bots tend to interact with bots that exhibit more human-like behaviors. Analysis of content ﬂows reveals retweet and mention strategies adopted by bots to interact with different target groups. Using clustering analysis, we characterize several subclasses of accounts, including spammers, self promoters, and accounts that post content from connected applications.</dcterms:abstract>
+        <dc:date>2017-03-27</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.1703.03107</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1703.03107</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:20:46</dcterms:dateSubmitted>
+        <z:shortTitle>Online Human-Bot Interactions</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:1703.03107 [cs.SI]</dc:description>
+        <prism:number>arXiv:1703.03107</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_69">
+        <rdf:value>Comment: Accepted paper for ICWSM'17, 10 pages, 8 figures, 1 table</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_67">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/67/Varol et al. - 2017 - Online Human-Bot Interactions Detection, Estimation, and Characterization.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1703.03107</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:20:44</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1710.10903">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Veličković</foaf:surname>
+                        <foaf:givenName>Petar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cucurull</foaf:surname>
+                        <foaf:givenName>Guillem</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Casanova</foaf:surname>
+                        <foaf:givenName>Arantxa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Romero</foaf:surname>
+                        <foaf:givenName>Adriana</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liò</foaf:surname>
+                        <foaf:givenName>Pietro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bengio</foaf:surname>
+                        <foaf:givenName>Yoshua</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_72"/>
+        <link:link rdf:resource="#item_70"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Social and Information Networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Artificial Intelligence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Graph Attention Networks</dc:title>
+        <dcterms:abstract>We present graph attention networks (GATs), novel neural network architectures that operate on graph-structured data, leveraging masked self-attentional layers to address the shortcomings of prior methods based on graph convolutions or their approximations. By stacking layers in which nodes are able to attend over their neighborhoods’ features, we enable (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront. In this way, we address several key challenges of spectral-based graph neural networks simultaneously, and make our model readily applicable to inductive as well as transductive problems. Our GAT models have achieved or matched state-of-theart results across four established transductive and inductive graph benchmarks: the Cora, Citeseer and Pubmed citation network datasets, as well as a proteinprotein interaction dataset (wherein test graphs remain unseen during training).</dcterms:abstract>
+        <dc:date>2018-02-04</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.1710.10903</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1710.10903</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:21:12</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:1710.10903 [stat.ML]</dc:description>
+        <prism:number>arXiv:1710.10903</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_72">
+       <rdf:value>Comment: To appear at ICLR 2018. 12 pages, 2 figures</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_70">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/70/Veličković et al. - 2018 - Graph Attention Networks.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1710.10903</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:21:10</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://ojs.aaai.org/index.php/ICWSM/article/view/7370">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1609/icwsm.v14i1.7370</dc:identifier>
+                <prism:volume>14</prism:volume>
+                <dc:title>Proceedings of the International AAAI Conference on Web and Social Media</dc:title>
+                <dc:identifier>ISSN 2334-0770</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Hui</foaf:surname>
+                        <foaf:givenName>Pik-Mai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yang</foaf:surname>
+                        <foaf:givenName>Kai-Cheng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Torres-Lugo</foaf:surname>
+                        <foaf:givenName>Christopher</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Menczer</foaf:surname>
+                        <foaf:givenName>Filippo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_76"/>
+        <dc:title>BotSlayer: DIY Real-Time Influence Campaign Detection</dc:title>
+        <dcterms:abstract>BotSlayer is an application that helps track and detect potential manipulation of information spreading on Twitter. It can be used by journalists, corporations, political candidates, and civil society organizations to discover online coordinated campaigns in real time. BotSlayer uses an anomaly detection algorithm to flag hashtags, links, accounts, phrases, and media that are trending and amplified in a coordinated fashion by likely bots. A Web dashboard lets users explore the tweets and accounts associated with suspicious campaigns, visualize their spread, and search related content on multiple search engines and social media platforms. BotSlayer is easily installed and configured in the cloud. It will aid in the study and early detection of social media manipulation phenomena.</dcterms:abstract>
+        <dc:date>2020-05-26</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ojs.aaai.org/index.php/ICWSM/article/view/7370</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:22:59</dcterms:dateSubmitted>
+        <z:shortTitle>BotSlayer</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>ojs.aaai.org</z:libraryCatalog>
+        <dc:rights>Copyright (c) 2020 Association for the Advancement of Artificial Intelligence</dc:rights>
+        <bib:pages>980-982</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_76">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/76/Hui et al. - 2020 - BotSlayer DIY Real-Time Influence Campaign Detection.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ojs.aaai.org/index.php/ICWSM/article/download/7370/7224</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:23:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2006.10637">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rossi</foaf:surname>
+                        <foaf:givenName>Emanuele</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chamberlain</foaf:surname>
+                        <foaf:givenName>Ben</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Frasca</foaf:surname>
+                        <foaf:givenName>Fabrizio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Eynard</foaf:surname>
+                        <foaf:givenName>Davide</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Monti</foaf:surname>
+                        <foaf:givenName>Federico</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bronstein</foaf:surname>
+                        <foaf:givenName>Michael</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_77"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Temporal Graph Networks for Deep Learning on Dynamic Graphs</dc:title>
+        <dcterms:abstract>Graph Neural Networks (GNNs) have recently become increasingly popular due to their ability to learn complex systems of relations or interactions. These arise in a broad spectrum of problems ranging from biology and particle physics to social networks and recommendation systems. Despite the plethora of different models for deep learning on graphs, few approaches have been proposed for dealing with graphs that are dynamic in nature (e.g. evolving features or connectivity over time). We present Temporal Graph Networks (TGNs), a generic, efﬁcient framework for deep learning on dynamic graphs represented as sequences of timed events. Thanks to a novel combination of memory modules and graph-based operators, TGNs signiﬁcantly outperform previous approaches while being more computationally efﬁcient. We furthermore show that several previous models for learning on dynamic graphs can be cast as speciﬁc instances of our framework. We perform a detailed ablation study of different components of our framework and devise the best conﬁguration that achieves state-of-the-art performance on several transductive and inductive prediction tasks for dynamic graphs.</dcterms:abstract>
+        <dc:date>2020-10-09</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.2006.10637</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2006.10637</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:24:13</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:2006.10637 [cs.LG]</dc:description>
+        <prism:number>arXiv:2006.10637</prism:number>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_77">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/77/Rossi et al. - 2020 - Temporal Graph Networks for Deep Learning on Dynamic Graphs.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2006.10637</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:24:10</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1705.07874">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lundberg</foaf:surname>
+                        <foaf:givenName>Scott</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lee</foaf:surname>
+                        <foaf:givenName>Su-In</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_81"/>
+        <link:link rdf:resource="#item_79"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Artificial Intelligence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A Unified Approach to Interpreting Model Predictions</dc:title>
+        <dcterms:abstract>Understanding why a model makes a certain prediction can be as crucial as the prediction’s accuracy in many applications. However, the highest accuracy for large modern datasets is often achieved by complex models that even experts struggle to interpret, such as ensemble or deep learning models, creating a tension between accuracy and interpretability. In response, various methods have recently been proposed to help users interpret the predictions of complex models, but it is often unclear how these methods are related and when one method is preferable over another. To address this problem, we present a uniﬁed framework for interpreting predictions, SHAP (SHapley Additive exPlanations). SHAP assigns each feature an importance value for a particular prediction. Its novel components include: (1) the identiﬁcation of a new class of additive feature importance measures, and (2) theoretical results showing there is a unique solution in this class with a set of desirable properties. The new class uniﬁes six existing methods, notable because several recent methods in the class lack the proposed desirable properties. Based on insights from this uniﬁcation, we present new methods that show improved computational performance and/or better consistency with human intuition than previous approaches.</dcterms:abstract>
+        <dc:date>2017-11-25</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.1705.07874</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1705.07874</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:24:39</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:1705.07874 [cs.AI]</dc:description>
+        <prism:number>arXiv:1705.07874</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_81">
+       <rdf:value>Comment: To appear in NIPS 2017</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_79">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/79/Lundberg e Lee - 2017 - A Unified Approach to Interpreting Model Predictions.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1705.07874</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:24:38</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/S0306437921000296">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:03064379"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tardelli</foaf:surname>
+                        <foaf:givenName>Serena</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Avvenuti</foaf:surname>
+                        <foaf:givenName>Marco</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tesconi</foaf:surname>
+                        <foaf:givenName>Maurizio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cresci</foaf:surname>
+                        <foaf:givenName>Stefano</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_82"/>
+        <dc:title>Detecting inorganic financial campaigns on Twitter</dc:title>
+        <dcterms:abstract>Online financial content is widespread on social media, especially on Twitter. The possibility to access open, real-time data about stock market information and firms’ public reputation can bring competitive advantages to industry insiders. However, as many studies extensively demonstrated before, manipulative campaigns by social bots do not spare the financial sector either.</dcterms:abstract>
+        <dc:date>01/2022</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/S0306437921000296</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:25:06</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>101769</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:03064379">
+        <dc:identifier>DOI 10.1016/j.is.2021.101769</dc:identifier>
+        <prism:volume>103</prism:volume>
+        <dc:title>Information Systems</dc:title>
+        <dc:identifier>ISSN 03064379</dc:identifier>
+        <dcterms:alternative>Information Systems</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_82">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/82/Tardelli et al. - 2022 - Detecting inorganic financial campaigns on Twitter.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pdf.sciencedirectassets.com/271528/1-s2.0-S0306437921X00063/1-s2.0-S0306437921000296/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEG4aCXVzLWVhc3QtMSJIMEYCIQDxJ1lKLiA47dgXoTuuYS9Hx1m%2FlFOhzwxVNp7rw2qWbwIhANocktvM1kQcenST%2BufJ%2Fvtp8c744I%2FR3fPMT0p8CfLzKrMFCDcQBRoMMDU5MDAzNTQ2ODY1Igxkvc8Qj7L4FAsnzTYqkAXN2x5qAG0lbPn4suAIxXE9FehiruVnWrhmKxr%2F55aYyjc9sn1sB66CyI7QDf8egMjxpOM6rybNtTxGHU903ClW31q6hHwz%2FRSmawVa0K8%2F5J9FuHvzsW%2BfNSqeINeYZzWYFasgifb48IRn2G32TPsiORVAN4pjA6fTnoc%2FpcvhZLj6LwPhruGjBrgCb9LnddKeBkhTBhaecBja%2BWpEHmSnD9RRSurOuOhavN6Gv9vKZvbdO2nzBYw6KYPRI7dmYCcoUxfJPn28LaYxn8oxFCT%2FfHf2dWt47qDcjIlvrz0GCGYmxNH3%2FcHH0rqY8tXGETUFTUIPBdSN7fjJUX92TNvf5%2ByrNpuxYtRMOL53k4JCUy54RWgalFEikac6AOVLx1l365tTKY3art1obnGvzzXEQGrGr73Cn4VSY5Yk5hhGSU%2BCGtUqPs2ZJwqKYgTlF7bxX59sKlmOFCDZ8TFmsOt%2BXnn9wh63yZ3dBW7yD%2FdApLatp3nvCTQGW5txiveCa3SIPPv8l%2FgVLAaUuHlteIaFKLFpHuCAcdgRZDKYqm3Is9s1FhAk37UlRRcktPww3vzqnOqmowVUeLYYfbpZ1UHG%2B%2BtBH1vvQGC05qwAYeWb0XmUiT90OCpfV2skSrQbolv0MsazNdYy99sVNHrHQhjTuOqqo5NcLM6SNbibSAI8pxXDi2dgzzHIcV5st5rDekTyWG%2BXPrG%2BdDDtVs%2Bu%2FEf0vVGVgIVTOwBpLvGczJ767IVv7tzrk2HhxxVPczvs2zb%2BBPAwIZeY9%2Fc1b1wb8d6Jc2YM3TUiQyOIhaAcdYqCQgCSfNxu%2Fz5jhHjQTE23xGgYayLjRPcR5xDLMGptUjveUf%2FeuYE%2F3t7JPdWraGqHxDCEvLHVBjqwAYFEIy4fePV2wmYyT1jELjoX4Lx2hLqMLcRsfSEDMJ8CMRttvZxt8jwRnIOKNKJvqPHCuSk6aK3EQz4hldQb%2BJ8Ozds6KQegkOrH4uQJ7qGKGELnxox6oIw6sAeSTCWfYNN51tpxEqv8gPHOPk2uxU0rzZLSnWtH%2FwEQk9cHL%2FnWtezNqyeVDqlACba0%2FQ6doeYNzf%2BtjUXk0edNJsINNgmpKjoGGZPeCR4AZVN5zz0h&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20260917T222456Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIAQ3PHCVTYZA6XNYPR%2F20260917%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=eae5ee6d2211da18961752247f86067f23a579c18c305e673af0b36acadbfec9&amp;hash=b4b1f57635345bb33bf99e2de26b60205559e627126a49c6f7da2cacd01890a8&amp;host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&amp;pii=S0306437921000296&amp;tid=spdf-139581c0-1355-4c6d-b8de-bef321362d70&amp;sid=30ca49fd3c06444f321827f05dcfb8cd6694gxrqa&amp;type=client&amp;tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&amp;rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&amp;ua=1816045d050c59555c54&amp;rr=a3cb8620afd12788&amp;cc=br</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:25:03</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1905.11485">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kazemi</foaf:surname>
+                        <foaf:givenName>Seyed Mehran</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goel</foaf:surname>
+                        <foaf:givenName>Rishab</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jain</foaf:surname>
+                        <foaf:givenName>Kshitij</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kobyzev</foaf:surname>
+                        <foaf:givenName>Ivan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sethi</foaf:surname>
+                        <foaf:givenName>Akshay</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Forsyth</foaf:surname>
+                        <foaf:givenName>Peter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Poupart</foaf:surname>
+                        <foaf:givenName>Pascal</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_86"/>
+        <link:link rdf:resource="#item_84"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Representation Learning for Dynamic Graphs: A Survey</dc:title>
+        <dcterms:abstract>Graphs arise naturally in many real-world applications including social networks, recommender systems, ontologies, biology, and computational ﬁnance. Traditionally, machine learning models for graphs have been mostly designed for static graphs. However, many applications involve evolving graphs. This introduces important challenges for learning and inference since nodes, attributes, and edges change over time. In this survey, we review the recent advances in representation learning for dynamic graphs, including dynamic knowledge graphs. We describe existing models from an encoder-decoder perspective, categorize these encoders and decoders based on the techniques they employ, and analyze the approaches in each category. We also review several prominent applications and widely used datasets and highlight directions for future research.</dcterms:abstract>
+        <dc:date>2020-04-27</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.1905.11485</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1905.11485</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:26:08</dcterms:dateSubmitted>
+        <z:shortTitle>Representation Learning for Dynamic Graphs</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:1905.11485 [cs.LG]</dc:description>
+        <prism:number>arXiv:1905.11485</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_86">
+       <rdf:value>Comment: Accepted at JMLR, 73 pages, 2 figures</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_84">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/84/Kazemi et al. - 2020 - Representation Learning for Dynamic Graphs A Survey.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1905.11485</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:26:05</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://ieeexplore.ieee.org/document/7876716/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1941-0018"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cresci</foaf:surname>
+                        <foaf:givenName>Stefano</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pietro</foaf:surname>
+                        <foaf:givenName>Roberto Di</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Petrocchi</foaf:surname>
+                        <foaf:givenName>Marinella</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Spognardi</foaf:surname>
+                        <foaf:givenName>Angelo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tesconi</foaf:surname>
+                        <foaf:givenName>Maurizio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_88"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>behavioral modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Biological system modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computational modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>digital DNA</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>DNA</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Fingerprint recognition</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Informatics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>online social networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>social bots</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Spambot detection</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Twitter</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Social Fingerprinting: Detection of Spambot Groups Through DNA-Inspired Behavioral Modeling</dc:title>
+        <dcterms:abstract>Spambot detection in online social networks is a long-lasting challenge involving the study and design of detection techniques capable of efficiently identifying ever-evolving spammers. Recently, a new wave of social spambots has emerged, with advanced human-like characteristics that allow them to go undetected even by current state-of-the-art algorithms. In this paper, we show that efficient spambots detection can be achieved via an in-depth analysis of their collective behaviors exploiting the digital DNA technique for modeling the behaviors of social network users. Inspired by its biological counterpart, in the digital DNA representation the behavioral lifetime of a digital account is encoded in a sequence of characters. Then, we define a similarity measure for such digital DNA sequences. We build upon digital DNA and the similarity between groups of users to characterize both genuine accounts and spambots. Leveraging such a characterization, we design the Social Fingerprinting technique, which is able to discriminate among spambots and genuine accounts in both a supervised and an unsupervised fashion. We also evaluate the effectiveness of Social Fingerprinting and we compare it with three state-of-the-art detection showing the superiority of our solution. Finally, among the peculiarities of our approach is the possibility to apply off-the-shelf DNA analysis techniques to study online users behaviors and to efficiently rely on a limited number of lightweight account characteristics.</dcterms:abstract>
+        <dc:date>2018-07</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/document/7876716/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:27:49</dcterms:dateSubmitted>
+        <z:shortTitle>Social Fingerprinting</z:shortTitle>
+        <z:libraryCatalog>IEEE Xplore</z:libraryCatalog>
+        <bib:pages>561-576</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1941-0018">
+        <dc:identifier>DOI 10.1109/TDSC.2017.2681672</dc:identifier>
+        <prism:volume>15</prism:volume>
+        <dc:title>IEEE Transactions on Dependable and Secure Computing</dc:title>
+        <dc:identifier>ISSN 1941-0018</dc:identifier>
+        <prism:number>4</prism:number>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_88">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/88/Cresci et al. - 2018 - Social Fingerprinting Detection of Spambot Groups Through DNA-Inspired Behavioral Modeling.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&amp;arnumber=7876716&amp;ref=</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:27:52</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1609.02907">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kipf</foaf:surname>
+                        <foaf:givenName>Thomas N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Welling</foaf:surname>
+                        <foaf:givenName>Max</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_93"/>
+        <link:link rdf:resource="#item_91"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Semi-Supervised Classification with Graph Convolutional Networks</dc:title>
+        <dcterms:abstract>We present a scalable approach for semi-supervised learning on graph-structured data that is based on an efﬁcient variant of convolutional neural networks which operate directly on graphs. We motivate the choice of our convolutional architecture via a localized ﬁrst-order approximation of spectral graph convolutions. Our model scales linearly in the number of graph edges and learns hidden layer representations that encode both local graph structure and features of nodes. In a number of experiments on citation networks and on a knowledge graph dataset we demonstrate that our approach outperforms related methods by a signiﬁcant margin.</dcterms:abstract>
+        <dc:date>2017-02-22</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.1609.02907</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1609.02907</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:29:21</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:1609.02907 [cs.LG]</dc:description>
+        <prism:number>arXiv:1609.02907</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_93">
+        <rdf:value>Comment: Published as a conference paper at ICLR 2017</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_91">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/91/Kipf e Welling - 2017 - Semi-Supervised Classification with Graph Convolutional Networks.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1609.02907</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:29:20</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="https://ieeexplore.ieee.org/document/9581221/">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1109/EuroSP51992.2021.00035</dc:identifier>
+                <dc:title>2021 IEEE European Symposium on Security and Privacy (EuroS&amp;P)</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Elmas</foaf:surname>
+                        <foaf:givenName>Tuğrulcan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Overdorf</foaf:surname>
+                        <foaf:givenName>Rebekah</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Özkalay</foaf:surname>
+                        <foaf:givenName>Ahmed Furkan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Aberer</foaf:surname>
+                        <foaf:givenName>Karl</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_95"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>astroturfing</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Blogs</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>bots</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>data driven analysis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>disinformation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Market research</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>social media</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>social media manipulation</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Social networking (online)</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Twitter</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Ephemeral Astroturfing Attacks: The Case of Fake Twitter Trends</dc:title>
+        <dcterms:abstract>We uncover a previously unknown, ongoing as-troturfing attack on the popularity mechanisms of social media platforms: ephemeral astroturfing attacks. In this attack, a chosen keyword or topic is artificially promoted by coordinated and inauthentic activity to appear popular, and, crucially, this activity is removed as part of the attack. We observe such attacks on Twitter trends and find that these attacks are not only successful but also pervasive. We detected over 19,000 unique fake trends promoted by over 108,000 accounts, including not only fake but also compromised accounts, many of which remained active and continued participating in the attacks. Trends astroturfed by these attacks account for at least 20% of the top 10 global trends. Ephemeral astroturfing threatens the integrity of popularity mechanisms on social media platforms and by extension the integrity of the platforms.</dcterms:abstract>
+        <dc:date>2021-09</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/document/9581221/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:30:23</dcterms:dateSubmitted>
+        <z:shortTitle>Ephemeral Astroturfing Attacks</z:shortTitle>
+        <z:libraryCatalog>IEEE Xplore</z:libraryCatalog>
+        <bib:pages>403-422</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>2021 IEEE European Symposium on Security and Privacy (EuroS&amp;P)</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_95">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/95/Elmas et al. - 2021 - Ephemeral Astroturfing Attacks The Case of Fake Twitter Trends.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&amp;arnumber=9581221&amp;ref=</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:30:26</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:979-8-4007-1274-6">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1145/3696410.3714564</dc:identifier>
+                <dc:identifier>ISBN 979-8-4007-1274-6</dc:identifier>
+                <dc:title>Proceedings of the ACM on Web Conference 2025</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>ACM</foaf:name>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Sydney NSW Australia</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhang</foaf:surname>
+                        <foaf:givenName>Xin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cai</foaf:surname>
+                        <foaf:givenName>Fei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zheng</foaf:surname>
+                        <foaf:givenName>Jianming</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pan</foaf:surname>
+                        <foaf:givenName>Zhiqiang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Wanyu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Honghui</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Chonghao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_96"/>
+        <dc:title>Triangle Matters! TopDyG: Topology-aware Transformer for Link Prediction on Dynamic Graphs</dc:title>
+        <dc:date>2025-04-28</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/3696410.3714564</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:32:06</dcterms:dateSubmitted>
+        <z:shortTitle>Triangle Matters! TopDyG</z:shortTitle>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <bib:pages>3607-3617</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+               <dc:title>WWW '25: The ACM Web Conference 2025</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_96">
+        <z:itemType>attachment</z:itemType>
+        <z:path rdf:resource="files/96/Zhang et al. - 2025 - Triangle Matters! TopDyG Topology-aware Transformer for Link Prediction on Dynamic Graphs.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3696410.3714564</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-09-17 22:32:04</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+</rdf:RDF>

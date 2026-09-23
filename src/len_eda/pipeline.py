@@ -71,7 +71,16 @@ def write_feature_table(rows: list[dict[str, object]], output: str | Path) -> Pa
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     with output.open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        # Os tópicos do Twitter frequentemente começam com ``#``. Alguns
+        # visualizadores de CSV tratam linhas iniciadas por ``#`` como
+        # comentários e escondem esses registros. QUOTE_NONNUMERIC mantém os
+        # campos de texto entre aspas e evita essa interpretação sem transformar
+        # as métricas numéricas em texto.
+        writer = csv.DictWriter(
+            stream,
+            fieldnames=list(rows[0]),
+            quoting=csv.QUOTE_NONNUMERIC,
+        )
         writer.writeheader()
         writer.writerows(rows)
     return output

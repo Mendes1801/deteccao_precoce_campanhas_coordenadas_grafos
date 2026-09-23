@@ -1,5 +1,10 @@
+##Todo .*
+.*
 ##Todos PDFs
 *.pdf
+
+#Todo powerpoint
+*.pptx
 
 ##Meta dados do dataset
 metadata_graph.json
@@ -23,3 +28,4 @@ __pycache__/
 
 ## Resultados derivados reproduziveis
 outputs/
+Referencias/Itens exportados ZOTERO/files/
