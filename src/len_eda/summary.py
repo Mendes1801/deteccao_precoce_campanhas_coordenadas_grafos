@@ -1,3 +1,8 @@
+# Integrantes: preencher com nome completo, e-mail e RA de cada integrante.
+# Conteúdo: leitura incremental dos grafos JSON do LEN e cálculo das métricas da EDA.
+# Histórico de alterações:
+# 15/09/2026 | Grupo | Criação do leitor incremental e das métricas estruturais e temporais.
+
 """Inspeção incremental dos grafos JSON do LEN.
 
 Os arquivos codificados com LaBSE são grandes principalmente por causa dos
