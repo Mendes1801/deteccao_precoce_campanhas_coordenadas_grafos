@@ -1,4 +1,27 @@
-# Rede de votos dos deputados
+# EDA da Câmara — possibilidades do TCC
+
+## Escopo atualizado: vinte anos e site interativo
+
+O estudo final deverá abranger pelo menos vinte anos e resultar em um site
+para exploração pública das análises. **Neste momento fazemos apenas uma
+sondagem pequena de viabilidade**, antes de escolher o tema e coletar a série.
+
+Comece por [`POSSIBILIDADES_TCC.md`](POSSIBILIDADES_TCC.md): opções de análise,
+evidências históricas pequenas, requisitos do site e próximos passos.
+O horizonte proposto é 2006–2025; a cobertura integral ainda não foi validada.
+
+```bash
+python DEPUTADOS/sondagem_historica.py
+python DEPUTADOS/sondagem_historica.py --offline
+```
+
+O fluxo consulta cinco anos de referência (2006, 2011, 2016, 2021, 2025), duas
+janelas mensais por ano e pouquíssimas respostas de votos, autores e temas.
+Ele não executa redes históricas nem varre todo o período. Resultados em
+`resultados_viabilidade/sondagem.json`.
+
+O material abaixo é o piloto de um mês, preservado para reaproveitamento
+técnico. Não é a análise longitudinal exigida pelo orientador.
 
 ## EDA para definição do novo tema — 21/10/2026
 
@@ -36,8 +59,9 @@ de orientação e três deputados para inspecionar despesas. Trata-se de seleç�
 exploratória, não de amostra representativa. O manifesto registra filtros,
 datas e respostas; a cobertura diz se uma listagem ficou parcial.
 
-Ao mudar o período, mantenha início e fim no mesmo ano, conforme a documentação
-atual da API de votações. Para este piloto, prefira um mês. Cada execução usa
+Ao mudar o período, prefira janelas mensais. Embora a especificação descreva
+datas no mesmo ano, a API rejeitou uma consulta anual de teste e informou um
+limite de três meses entre as datas. Cada execução deste piloto usa
 até 200 consultas distintas de aplicação; retentativas de transporte podem
 adicionar tentativas HTTP. O cache guarda a data original da resposta. Para
 atualizar dados já armazenados, escolha uma nova pasta com `--cache`.

@@ -5,6 +5,12 @@ Dados Abertos da Câmara dos Deputados. O EDA inicial, as possibilidades para
 discussão com o orientador e o registro da mudança estão em
 [`DEPUTADOS/README.md`](DEPUTADOS/README.md).
 
+Requisitos definidos com o orientador: estudar pelo menos vinte anos e
+entregar um site com análises e grafos interativos. O tema específico ainda
+será escolhido. Agora o foco é uma sondagem leve de possibilidades, registrada
+em [`DEPUTADOS/POSSIBILIDADES_TCC.md`](DEPUTADOS/POSSIBILIDADES_TCC.md), antes
+da coleta definitiva.
+
 Os materiais sobre LEN e detecção precoce abaixo são mantidos como histórico
 para o relatório final, sem representar o escopo atual do projeto.
 

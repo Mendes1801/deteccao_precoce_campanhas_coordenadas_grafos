@@ -1,0 +1,1091 @@
+{
+  "execucao_em": "2026-10-21T21:52:25.412188+00:00",
+  "horizonte_proposto": {
+    "inicio": "2006-01-01",
+    "fim": "2025-12-31",
+    "anos_civis": 20,
+    "status": "escopo de estudo futuro; cobertura integral não verificada"
+  },
+  "anos_amostrados": [
+    2006,
+    2011,
+    2016,
+    2021,
+    2025
+  ],
+  "resumo": [
+    {
+      "ano_referencia": 2006,
+      "metadados_votacoes_inspecionados": 50,
+      "votacoes_com_votos_inspecionadas": 0,
+      "registros_voto_inspecionados": 0,
+      "votos_com_id_deputado": 0,
+      "orientacoes_inspecionadas": 0,
+      "PL_inspecionados": 1,
+      "autores_inspecionados": 1,
+      "temas_inspecionados": 1,
+      "consultas_com_falha": 0,
+      "limite": "Março/agosto, até 50 metadados por mês; uma decisão e um PL. Não representa o ano."
+    },
+    {
+      "ano_referencia": 2011,
+      "metadados_votacoes_inspecionados": 97,
+      "votacoes_com_votos_inspecionadas": 0,
+      "registros_voto_inspecionados": 0,
+      "votos_com_id_deputado": 0,
+      "orientacoes_inspecionadas": 0,
+      "PL_inspecionados": 1,
+      "autores_inspecionados": 1,
+      "temas_inspecionados": 1,
+      "consultas_com_falha": 0,
+      "limite": "Março/agosto, até 50 metadados por mês; uma decisão e um PL. Não representa o ano."
+    },
+    {
+      "ano_referencia": 2016,
+      "metadados_votacoes_inspecionados": 100,
+      "votacoes_com_votos_inspecionadas": 1,
+      "registros_voto_inspecionados": 447,
+      "votos_com_id_deputado": 447,
+      "orientacoes_inspecionadas": 17,
+      "PL_inspecionados": 1,
+      "autores_inspecionados": 2,
+      "temas_inspecionados": 1,
+      "consultas_com_falha": 0,
+      "limite": "Março/agosto, até 50 metadados por mês; uma decisão e um PL. Não representa o ano."
+    },
+    {
+      "ano_referencia": 2021,
+      "metadados_votacoes_inspecionados": 100,
+      "votacoes_com_votos_inspecionadas": 1,
+      "registros_voto_inspecionados": 467,
+      "votos_com_id_deputado": 467,
+      "orientacoes_inspecionadas": 28,
+      "PL_inspecionados": 1,
+      "autores_inspecionados": 15,
+      "temas_inspecionados": 1,
+      "consultas_com_falha": 0,
+      "limite": "Março/agosto, até 50 metadados por mês; uma decisão e um PL. Não representa o ano."
+    },
+    {
+      "ano_referencia": 2025,
+      "metadados_votacoes_inspecionados": 95,
+      "votacoes_com_votos_inspecionadas": 1,
+      "registros_voto_inspecionados": 462,
+      "votos_com_id_deputado": 462,
+      "orientacoes_inspecionadas": 8,
+      "PL_inspecionados": 1,
+      "autores_inspecionados": 1,
+      "temas_inspecionados": 1,
+      "consultas_com_falha": 0,
+      "limite": "Março/agosto, até 50 metadados por mês; uma decisão e um PL. Não representa o ano."
+    }
+  ],
+  "manifesto": [
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2006-08-31&dataInicio=2006-08-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:15.376604+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2011-03-31&dataInicio=2011-03-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:15.716842+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2006-03-31&dataInicio=2006-03-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:15.476389+00:00",
+      "segundos": 0.005
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2011&itens=1&ordem=ASC&ordenarPor=id&siglaTipo=PL",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:16.565066+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2011-08-31&dataInicio=2011-08-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:15.785800+00:00",
+      "segundos": 0.004
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2016-03-31&dataInicio=2016-03-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:16.286189+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2016-08-31&dataInicio=2016-08-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:16.159841+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2016&itens=1&ordem=ASC&ordenarPor=id&siglaTipo=PL",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:16.959510+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2021-08-31&dataInicio=2021-08-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:16.898895+00:00",
+      "segundos": 0.0
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2021-03-31&dataInicio=2021-03-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:16.790778+00:00",
+      "segundos": 0.005
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2025-03-31&dataInicio=2025-03-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:17.558325+00:00",
+      "segundos": 0.003
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2025-08-31&dataInicio=2025-08-01&idOrgao=180&itens=50&ordem=ASC&ordenarPor=dataHoraRegistro",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:17.273814+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2006&itens=1&ordem=ASC&ordenarPor=id&siglaTipo=PL",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:15.741466+00:00",
+      "segundos": 0.017
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2025&itens=1&ordem=ASC&ordenarPor=id&siglaTipo=PL",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:18.182341+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2021&itens=1&ordem=ASC&ordenarPor=id&siglaTipo=PL",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:18.320478+00:00",
+      "segundos": 0.008
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/303318-46/votos",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:23.123812+00:00",
+      "segundos": 0.0
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/303318-46/orientacoes",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:23.117558+00:00",
+      "segundos": 0.0
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/495215-63/votos",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:23.371708+00:00",
+      "segundos": 0.0
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/311279/autores",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:22.909449+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/311279/temas",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:23.171936+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/495215-63/orientacoes",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:23.777511+00:00",
+      "segundos": 0.0
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/1806249-68/votos",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:24.103289+00:00",
+      "segundos": 0.002
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/490402/autores",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:23.430381+00:00",
+      "segundos": 0.002
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/1806249-68/orientacoes",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:25.696318+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/490402/temas",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:23.720346+00:00",
+      "segundos": 0.003
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/381872/temas",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:24.326217+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2263719-89/orientacoes",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:24.856008+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2263719-89/votos",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:24.911270+00:00",
+      "segundos": 0.003
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/381872/autores",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:24.152628+00:00",
+      "segundos": 0.004
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/257161/temas",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:25.177944+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2485066-33/votos",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:25.906388+00:00",
+      "segundos": 0.002
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/257161/autores",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:25.306066+00:00",
+      "segundos": 0.004
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/106701/autores",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:25.949645+00:00",
+      "segundos": 0.001
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/106701/temas",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:26.132583+00:00",
+      "segundos": 0.0
+    },
+    {
+      "url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2485066-33/orientacoes",
+      "status": 200,
+      "cache": true,
+      "coletado_em": "2026-10-21T21:49:26.293379+00:00",
+      "segundos": 0.002
+    }
+  ],
+  "metodo": "Sondagem de esquema e presença em cinco momentos. Sem totais anuais, redes históricas, rankings ou inferência de tendência.",
+  "evidencias": [
+    {
+      "ano": 2006,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2006-03-01",
+        "dataFim": "2006-03-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2006-03-31&dataInicio=2006-03-01&idOrgao=180&ordem=ASC&ordenarPor=dataHoraRegistro&pagina=2&itens=50",
+      "registros_retornados": 50,
+      "campos_observados": [
+        "aprovacao",
+        "data",
+        "dataHoraRegistro",
+        "descricao",
+        "id",
+        "proposicaoObjeto",
+        "siglaOrgao",
+        "uri",
+        "uriEvento",
+        "uriOrgao",
+        "uriProposicaoObjeto"
+      ]
+    },
+    {
+      "ano": 2006,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2006-08-01",
+        "dataFim": "2006-08-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 0,
+      "campos_observados": []
+    },
+    {
+      "ano": 2006,
+      "tipo": "catalogo_proposicoes",
+      "rota": "/proposicoes",
+      "filtros": {
+        "ano": 2006,
+        "siglaTipo": "PL",
+        "itens": 1,
+        "ordem": "ASC",
+        "ordenarPor": "id"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2006&ordem=ASC&ordenarPor=id&siglaTipo=PL&pagina=2&itens=1",
+      "registros_retornados": 1,
+      "campos_observados": [
+        "ano",
+        "codTipo",
+        "dataApresentacao",
+        "ementa",
+        "id",
+        "numero",
+        "siglaTipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2011,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2011-03-01",
+        "dataFim": "2011-03-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2011-03-31&dataInicio=2011-03-01&idOrgao=180&ordem=ASC&ordenarPor=dataHoraRegistro&pagina=2&itens=50",
+      "registros_retornados": 50,
+      "campos_observados": [
+        "aprovacao",
+        "data",
+        "dataHoraRegistro",
+        "descricao",
+        "id",
+        "proposicaoObjeto",
+        "siglaOrgao",
+        "uri",
+        "uriEvento",
+        "uriOrgao",
+        "uriProposicaoObjeto"
+      ]
+    },
+    {
+      "ano": 2011,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2011-08-01",
+        "dataFim": "2011-08-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 47,
+      "campos_observados": [
+        "aprovacao",
+        "data",
+        "dataHoraRegistro",
+        "descricao",
+        "id",
+        "proposicaoObjeto",
+        "siglaOrgao",
+        "uri",
+        "uriEvento",
+        "uriOrgao",
+        "uriProposicaoObjeto"
+      ]
+    },
+    {
+      "ano": 2011,
+      "tipo": "catalogo_proposicoes",
+      "rota": "/proposicoes",
+      "filtros": {
+        "ano": 2011,
+        "siglaTipo": "PL",
+        "itens": 1,
+        "ordem": "ASC",
+        "ordenarPor": "id"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2011&ordem=ASC&ordenarPor=id&siglaTipo=PL&pagina=2&itens=1",
+      "registros_retornados": 1,
+      "campos_observados": [
+        "ano",
+        "codTipo",
+        "dataApresentacao",
+        "ementa",
+        "id",
+        "numero",
+        "siglaTipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2016,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2016-03-01",
+        "dataFim": "2016-03-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2016-03-31&dataInicio=2016-03-01&idOrgao=180&ordem=ASC&ordenarPor=dataHoraRegistro&pagina=2&itens=50",
+      "registros_retornados": 50,
+      "campos_observados": [
+        "aprovacao",
+        "data",
+        "dataHoraRegistro",
+        "descricao",
+        "id",
+        "proposicaoObjeto",
+        "siglaOrgao",
+        "uri",
+        "uriEvento",
+        "uriOrgao",
+        "uriProposicaoObjeto"
+      ]
+    },
+    {
+      "ano": 2016,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2016-08-01",
+        "dataFim": "2016-08-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2016-08-31&dataInicio=2016-08-01&idOrgao=180&ordem=ASC&ordenarPor=dataHoraRegistro&pagina=2&itens=50",
+      "registros_retornados": 50,
+      "campos_observados": [
+        "aprovacao",
+        "data",
+        "dataHoraRegistro",
+        "descricao",
+        "id",
+        "proposicaoObjeto",
+        "siglaOrgao",
+        "uri",
+        "uriEvento",
+        "uriOrgao",
+        "uriProposicaoObjeto"
+      ]
+    },
+    {
+      "ano": 2016,
+      "tipo": "catalogo_proposicoes",
+      "rota": "/proposicoes",
+      "filtros": {
+        "ano": 2016,
+        "siglaTipo": "PL",
+        "itens": 1,
+        "ordem": "ASC",
+        "ordenarPor": "id"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2016&ordem=ASC&ordenarPor=id&siglaTipo=PL&pagina=2&itens=1",
+      "registros_retornados": 1,
+      "campos_observados": [
+        "ano",
+        "codTipo",
+        "dataApresentacao",
+        "ementa",
+        "id",
+        "numero",
+        "siglaTipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2021,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2021-03-01",
+        "dataFim": "2021-03-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2021-03-31&dataInicio=2021-03-01&idOrgao=180&ordem=ASC&ordenarPor=dataHoraRegistro&pagina=2&itens=50",
+      "registros_retornados": 50,
+      "campos_observados": [
+        "aprovacao",
+        "data",
+        "dataHoraRegistro",
+        "descricao",
+        "id",
+        "proposicaoObjeto",
+        "siglaOrgao",
+        "uri",
+        "uriEvento",
+        "uriOrgao",
+        "uriProposicaoObjeto"
+      ]
+    },
+    {
+      "ano": 2021,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2021-08-01",
+        "dataFim": "2021-08-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2021-08-31&dataInicio=2021-08-01&idOrgao=180&ordem=ASC&ordenarPor=dataHoraRegistro&pagina=2&itens=50",
+      "registros_retornados": 50,
+      "campos_observados": [
+        "aprovacao",
+        "data",
+        "dataHoraRegistro",
+        "descricao",
+        "id",
+        "proposicaoObjeto",
+        "siglaOrgao",
+        "uri",
+        "uriEvento",
+        "uriOrgao",
+        "uriProposicaoObjeto"
+      ]
+    },
+    {
+      "ano": 2021,
+      "tipo": "catalogo_proposicoes",
+      "rota": "/proposicoes",
+      "filtros": {
+        "ano": 2021,
+        "siglaTipo": "PL",
+        "itens": 1,
+        "ordem": "ASC",
+        "ordenarPor": "id"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2021&ordem=ASC&ordenarPor=id&siglaTipo=PL&pagina=2&itens=1",
+      "registros_retornados": 1,
+      "campos_observados": [
+        "ano",
+        "codTipo",
+        "dataApresentacao",
+        "ementa",
+        "id",
+        "numero",
+        "siglaTipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2025,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2025-03-01",
+        "dataFim": "2025-03-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 45,
+      "campos_observados": [
+        "aprovacao",
+        "data",
+        "dataHoraRegistro",
+        "descricao",
+        "id",
+        "proposicaoObjeto",
+        "siglaOrgao",
+        "uri",
+        "uriEvento",
+        "uriOrgao",
+        "uriProposicaoObjeto"
+      ]
+    },
+    {
+      "ano": 2025,
+      "tipo": "catalogo_votacoes",
+      "rota": "/votacoes",
+      "filtros": {
+        "dataInicio": "2025-08-01",
+        "dataFim": "2025-08-31",
+        "idOrgao": 180,
+        "itens": 50,
+        "ordem": "ASC",
+        "ordenarPor": "dataHoraRegistro"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataFim=2025-08-31&dataInicio=2025-08-01&idOrgao=180&ordem=ASC&ordenarPor=dataHoraRegistro&pagina=2&itens=50",
+      "registros_retornados": 50,
+      "campos_observados": [
+        "aprovacao",
+        "data",
+        "dataHoraRegistro",
+        "descricao",
+        "id",
+        "proposicaoObjeto",
+        "siglaOrgao",
+        "uri",
+        "uriEvento",
+        "uriOrgao",
+        "uriProposicaoObjeto"
+      ]
+    },
+    {
+      "ano": 2025,
+      "tipo": "catalogo_proposicoes",
+      "rota": "/proposicoes",
+      "filtros": {
+        "ano": 2025,
+        "siglaTipo": "PL",
+        "itens": 1,
+        "ordem": "ASC",
+        "ordenarPor": "id"
+      },
+      "status": 200,
+      "paginas": 1,
+      "completo": false,
+      "proxima": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?ano=2025&ordem=ASC&ordenarPor=id&siglaTipo=PL&pagina=2&itens=1",
+      "registros_retornados": 1,
+      "campos_observados": [
+        "ano",
+        "codTipo",
+        "dataApresentacao",
+        "ementa",
+        "id",
+        "numero",
+        "siglaTipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2006,
+      "tipo": "votos",
+      "rota": "/votacoes/303318-46/votos",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 0,
+      "campos_observados": []
+    },
+    {
+      "ano": 2006,
+      "tipo": "orientacoes",
+      "rota": "/votacoes/303318-46/orientacoes",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 0,
+      "campos_observados": []
+    },
+    {
+      "ano": 2006,
+      "tipo": "autores",
+      "rota": "/proposicoes/311279/autores",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 1,
+      "campos_observados": [
+        "codTipo",
+        "nome",
+        "ordemAssinatura",
+        "proponente",
+        "tipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2006,
+      "tipo": "temas",
+      "rota": "/proposicoes/311279/temas",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 1,
+      "campos_observados": [
+        "codTema",
+        "relevancia",
+        "tema"
+      ]
+    },
+    {
+      "ano": 2011,
+      "tipo": "votos",
+      "rota": "/votacoes/495215-63/votos",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 0,
+      "campos_observados": []
+    },
+    {
+      "ano": 2011,
+      "tipo": "orientacoes",
+      "rota": "/votacoes/495215-63/orientacoes",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 0,
+      "campos_observados": []
+    },
+    {
+      "ano": 2011,
+      "tipo": "autores",
+      "rota": "/proposicoes/490402/autores",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 1,
+      "campos_observados": [
+        "codTipo",
+        "nome",
+        "ordemAssinatura",
+        "proponente",
+        "tipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2011,
+      "tipo": "temas",
+      "rota": "/proposicoes/490402/temas",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 1,
+      "campos_observados": [
+        "codTema",
+        "relevancia",
+        "tema"
+      ]
+    },
+    {
+      "ano": 2016,
+      "tipo": "votos",
+      "rota": "/votacoes/1806249-68/votos",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 447,
+      "campos_observados": [
+        "dataRegistroVoto",
+        "deputado_",
+        "tipoVoto"
+      ]
+    },
+    {
+      "ano": 2016,
+      "tipo": "orientacoes",
+      "rota": "/votacoes/1806249-68/orientacoes",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 17,
+      "campos_observados": [
+        "codPartidoBloco",
+        "codTipoLideranca",
+        "orientacaoVoto",
+        "siglaPartidoBloco",
+        "uriPartidoBloco"
+      ]
+    },
+    {
+      "ano": 2016,
+      "tipo": "autores",
+      "rota": "/proposicoes/381872/autores",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 2,
+      "campos_observados": [
+        "codTipo",
+        "nome",
+        "ordemAssinatura",
+        "proponente",
+        "tipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2016,
+      "tipo": "temas",
+      "rota": "/proposicoes/381872/temas",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 1,
+      "campos_observados": [
+        "codTema",
+        "relevancia",
+        "tema"
+      ]
+    },
+    {
+      "ano": 2021,
+      "tipo": "votos",
+      "rota": "/votacoes/2263719-89/votos",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 467,
+      "campos_observados": [
+        "dataRegistroVoto",
+        "deputado_",
+        "tipoVoto"
+      ]
+    },
+    {
+      "ano": 2021,
+      "tipo": "orientacoes",
+      "rota": "/votacoes/2263719-89/orientacoes",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 28,
+      "campos_observados": [
+        "codPartidoBloco",
+        "codTipoLideranca",
+        "orientacaoVoto",
+        "siglaPartidoBloco",
+        "uriPartidoBloco"
+      ]
+    },
+    {
+      "ano": 2021,
+      "tipo": "autores",
+      "rota": "/proposicoes/257161/autores",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 15,
+      "campos_observados": [
+        "codTipo",
+        "nome",
+        "ordemAssinatura",
+        "proponente",
+        "tipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2021,
+      "tipo": "temas",
+      "rota": "/proposicoes/257161/temas",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 1,
+      "campos_observados": [
+        "codTema",
+        "relevancia",
+        "tema"
+      ]
+    },
+    {
+      "ano": 2025,
+      "tipo": "votos",
+      "rota": "/votacoes/2485066-33/votos",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 462,
+      "campos_observados": [
+        "dataRegistroVoto",
+        "deputado_",
+        "tipoVoto"
+      ]
+    },
+    {
+      "ano": 2025,
+      "tipo": "orientacoes",
+      "rota": "/votacoes/2485066-33/orientacoes",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 8,
+      "campos_observados": [
+        "codPartidoBloco",
+        "codTipoLideranca",
+        "orientacaoVoto",
+        "siglaPartidoBloco",
+        "uriPartidoBloco"
+      ]
+    },
+    {
+      "ano": 2025,
+      "tipo": "autores",
+      "rota": "/proposicoes/106701/autores",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 1,
+      "campos_observados": [
+        "codTipo",
+        "nome",
+        "ordemAssinatura",
+        "proponente",
+        "tipo",
+        "uri"
+      ]
+    },
+    {
+      "ano": 2025,
+      "tipo": "temas",
+      "rota": "/proposicoes/106701/temas",
+      "filtros": null,
+      "status": 200,
+      "paginas": 1,
+      "completo": true,
+      "proxima": null,
+      "registros_retornados": 1,
+      "campos_observados": [
+        "codTema",
+        "relevancia",
+        "tema"
+      ]
+    }
+  ]
+}

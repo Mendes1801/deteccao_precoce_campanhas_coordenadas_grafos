@@ -1,5 +1,7 @@
 # EDA da API da Câmara — material para orientação
 
+> **Escopo atualizado após a orientação:** o estudo final deverá abranger pelo menos vinte anos e resultar em um site interativo. A etapa atual é uma sondagem leve de possibilidades. Ver [`../POSSIBILIDADES_TCC.md`](../POSSIBILIDADES_TCC.md). O texto abaixo registra o piloto técnico de agosto/2023 e não constitui a análise dos vinte anos.
+
 **Execução em 21/10/2026. Tema ainda em definição.**
 
 ## O que está pronto

@@ -11,3 +11,9 @@ Os scripts preexistentes em `DEPUTADOS` exploram concordância de votos, comunid
 A estratégia atual é consultar recortes pequenos pela API, registrar a qualidade e as relações possíveis entre os dados e apresentar opções de pesquisa. A extração da base definitiva deve ocorrer depois da delimitação do escopo. As pequenas respostas consultadas ficam em cache para permitir reexecução rápida e auditoria; isso não corresponde ao download integral da base.
 
 O cronograma e a bibliografia do tema anterior são documentos históricos. As novas metas e referências devem ser revisadas após a definição do tema. Os arquivos anteriores foram preservados.
+
+## Requisitos acrescentados em 21/10/2026
+
+O orientador solicitou um período de estudo de pelo menos vinte anos. A entrega final pretendida será um site para o público explorar análises, grafos e informações interativas. As análises e a pergunta científica continuam abertas à discussão.
+
+O usuário esclareceu que a etapa atual deve ser leve: identificar possibilidades com os dados disponíveis, sem gastar muito tempo analisando grandes volumes. Foi proposta a janela 2006–2025 como horizonte futuro e uma sondagem pequena em cinco momentos para examinar a viabilidade. Isso não corresponde à execução do estudo dos vinte anos. Ver `POSSIBILIDADES_TCC.md`.
