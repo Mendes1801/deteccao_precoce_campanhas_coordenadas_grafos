@@ -1,4 +1,16 @@
-# Detecção precoce de campanhas coordenadas
+# TCC — tema em redefinição
+
+Atualização de 21/10/2026: a fonte ativa de investigação passa a ser a API de
+Dados Abertos da Câmara dos Deputados. O EDA inicial, as possibilidades para
+discussão com o orientador e o registro da mudança estão em
+[`DEPUTADOS/README.md`](DEPUTADOS/README.md).
+
+Os materiais sobre LEN e detecção precoce abaixo são mantidos como histórico
+para o relatório final, sem representar o escopo atual do projeto.
+
+---
+
+## Histórico — detecção precoce de campanhas coordenadas
 
 TCC sobre detecção precoce de campanhas coordenadas em redes sociais por
 meio da evolução de grafos temporais. A base experimental inicial é o

@@ -1,5 +1,67 @@
 # Rede de votos dos deputados
 
+## EDA para definição do novo tema — 21/10/2026
+
+O tema do TCC está em redefinição. O histórico da mudança está em
+[`REGISTRO_MUDANCA_TEMA.md`](REGISTRO_MUDANCA_TEMA.md).
+O EDA delimitado está em `eda_camara_api.ipynb`; o relatório para a orientação
+está em `resultados_eda/RELATORIO_EDA.md`.
+
+O novo fluxo consulta diretamente pequenos recortes da API. Usa paginação
+com limite declarado, três consultas simultâneas, timeouts, retentativas e
+cache auditável das respostas. Não executa `exportar_votacoes.py` nem baixa
+todo o ano. O mês inicial é agosto/2023, para aproveitar o recorte existente;
+não é uma afirmação de que esse mês representa toda a legislatura.
+
+```bash
+python -m pip install -e '.[camara,notebook]'
+python DEPUTADOS/eda_api.py
+```
+
+Para repetir sem chamadas de rede depois da primeira coleta:
+
+```bash
+python DEPUTADOS/eda_api.py --offline
+```
+
+Para refazer apenas a análise de uma coleta guardada:
+
+```bash
+python DEPUTADOS/eda_api.py --analisar-coleta DEPUTADOS/resultados_eda/coleta.json
+```
+
+Os limites padrão são 30 votações com descrição contendo placar + até seis
+sem esse indício, 12 projetos entre os primeiros 100 PL do mês, 24 consultas
+de orientação e três deputados para inspecionar despesas. Trata-se de seleção
+exploratória, não de amostra representativa. O manifesto registra filtros,
+datas e respostas; a cobertura diz se uma listagem ficou parcial.
+
+Ao mudar o período, mantenha início e fim no mesmo ano, conforme a documentação
+atual da API de votações. Para este piloto, prefira um mês. Cada execução usa
+até 200 consultas distintas de aplicação; retentativas de transporte podem
+adicionar tentativas HTTP. O cache guarda a data original da resposta. Para
+atualizar dados já armazenados, escolha uma nova pasta com `--cache`.
+
+As redes novas usam o identificador numérico do deputado; ausências não são
+discordâncias. A análise compara todos os tipos de voto com somente Sim/Não,
+examina o efeito das votações quase consensuais e varia mínimo compartilhado
+(5, 10, 20) e concordância (70%, 80%, 90%). As métricas refletem a amostra.
+A composição partidária é a última observada nos votos do período e mudanças
+são contadas. Não é uma reconstrução completa da filiação histórica.
+
+As orientações são comparadas apenas quando existe correspondência direta
+entre partido e liderança partidária (`codTipoLideranca=P`) e valores Sim/Não.
+Blocos, federações e orientações não binárias ficam fora dessa taxa; a cobertura
+é apresentada junto ao resultado. Ausência de correspondência não é rebeldia.
+
+Verificação do código sem consultar a rede:
+
+```bash
+python -m unittest discover -s DEPUTADOS -p 'test_eda_api.py' -v
+```
+
+---
+
 Este diretório contém uma demonstração de análise de concordância entre votos
 nominais de deputados federais. O script consulta a API de Dados Abertos da
 Câmara, monta uma rede não direcionada e detecta comunidades com Louvain.
