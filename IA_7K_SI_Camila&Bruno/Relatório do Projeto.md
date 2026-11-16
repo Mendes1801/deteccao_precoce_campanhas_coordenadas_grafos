@@ -1,16 +1,23 @@
 # Detecção precoce de campanhas coordenadas em redes sociais por meio da evolução de grafos temporais
 
+**Integrantes:** Camila Nunes Carniel e Bruno Germanetti
+**Instituição:** Universidade Presbiteriana Mackenzie — Faculdade de Computação e Informática
+**Disciplina:** Inteligência Artificial — 7ºK SI, Noite
+**Professor:** Prof. Dr. Leandro Zerbinatti
+**RAs e e-mails:** pendentes de confirmação dos integrantes
+
 ## 1. Título
 
 **Detecção precoce de campanhas coordenadas em redes sociais por meio da evolução de grafos temporais**
 
 ## 2. Integrantes
-Camila Carniel 
-Bruno Germanetti
+
+- Camila Nunes Carniel — RA: **[preencher]** — e-mail: **[preencher]**
+- Bruno Germanetti — RA: **[preencher]** — e-mail: **[preencher]**
 
 ## 3. Resumo
 
-Este projeto investiga a possibilidade de identificar precocemente campanhas coordenadas em redes sociais a partir da evolução temporal das interações entre usuários. A base experimental inicial é o **Large Engagement Networks (LEN)**, um conjunto de grafos direcionados rotulados como `campaign` ou `noncampaign`. Na etapa atual, foi realizada uma análise exploratória reprodutível em Python, com leitura incremental dos arquivos JSON, cálculo de métricas estruturais e temporais e verificação de integridade. O pacote local contém 104 grafos, 53 classificados como campanhas e 51 como não campanhas, totalizando 212.231 nós e 289.975 arestas. Todos os grafos possuem timestamps nas arestas, o que permite reconstruir estados parciais da rede após ordenar os eventos. A metodologia proposta é separar as redes por campanha, gerar janelas temporais, extrair características de crescimento e topologia e comparar baselines com modelos temporais de grafos. Espera-se obter um detector que preserve desempenho com apenas uma fração inicial das interações e que produza evidências interpretáveis para apoiar a análise humana.
+Este projeto investiga a possibilidade de identificar precocemente campanhas coordenadas em redes sociais a partir da evolução temporal das interações entre usuários. A base experimental inicial é o **Large Engagement Networks (LEN)**, um conjunto de grafos direcionados rotulados como `campaign` ou `noncampaign`. Nesta entrega, foi realizada uma análise exploratória reprodutível em Python, com leitura incremental dos arquivos JSON, cálculo de métricas estruturais e temporais e verificação de integridade. O pacote local contém 104 arquivos, 53 classificados como campanhas e 51 como não campanhas, totalizando 212.231 nós e 289.975 arestas; uma duplicata exata foi identificada e documentada, restando 103 grafos únicos. Todos os grafos possuem timestamps nas arestas, o que permite reconstruir estados parciais da rede após ordenar os eventos. A solução entregue é um pipeline de preparação e extração de características, não um classificador treinado: a comparação de modelos e a medição de desempenho ainda são etapas futuras.
 
 ## 4. Introdução
 
@@ -100,7 +107,7 @@ len-summary --data-dir small_encoder_final --output outputs/len_small_summary.cs
 
 A análise exploratória em Python está em [notebooks/01_eda_inicial_len.ipynb](../notebooks/01_eda_inicial_len.ipynb). O código reutilizável e testado está em [src/len_eda/summary.py](../src/len_eda/summary.py), e o teste automatizado está em [tests/test_summary.py](../tests/test_summary.py).
 
-## 8. Metodologia e resultados esperados
+## 8. Metodologia
 
 A metodologia será executada em etapas:
 
@@ -112,15 +119,54 @@ A metodologia será executada em etapas:
 6. **Modelos temporais:** após validar o baseline, avaliar representações temporais de grafos e, se houver justificativa e ambiente reproduzível, modelos de aprendizado profundo para grafos.
 7. **Avaliação:** medir acurácia balanceada, precisão, revocação, F1, ROC-AUC, PR-AUC, calibração e desempenho por fração temporal. Também serão analisados falsos positivos, falsos negativos e o ponto de antecedência em que a decisão atinge um nível de confiança definido.
 
-Os resultados esperados são: uma base canônica e documentada; tabelas e gráficos reproduzíveis da EDA; um pipeline sem vazamento temporal; uma comparação transparente de baselines; e uma estimativa de quanto da evolução da rede é necessária para detectar uma campanha. Não se espera, nesta etapa, demonstrar uma solução pronta para moderação em produção. O resultado principal será evidência experimental sobre a viabilidade e as limitações da detecção precoce no LEN.
+O pipeline de grafos parciais foi implementado em `src/len_eda/temporal.py` e `src/len_eda/pipeline.py`. Ele ordena as arestas pelo timestamp e constrói estados em dez frações (10% a 100%) por duas modalidades: fração do tempo decorrido (`time`) e fração das arestas observadas (`events`). Em cada estado são extraídas métricas de tamanho, conectividade, direção, concentração de grau, comunidades, modularidade, clustering e distribuição temporal. A configuração `config/len_small_exclusions.csv` remove uma duplicata byte a byte sem alterar os arquivos de origem.
 
-## 9. Referências citadas
+A tabela de atributos parciais pode ser recriada com:
+
+```bash
+len-features \
+	--data-dir small_encoder_final \
+	--exclusions config/len_small_exclusions.csv \
+	--output outputs/partial_graph_features.csv
+```
+
+Os dois modos e as dez frações produzem até vinte estados por grafo elegível. O notebook [02_eda_aprofundada_len.ipynb](../notebooks/02_eda_aprofundada_len.ipynb) examina as medidas e as diferenças observadas entre as classes. O protocolo metodológico prevê a divisão por grafo antes de gerar janelas, evitando que estados do mesmo tópico sejam distribuídos entre treino e teste. Também prevê comparar regressão logística e Random Forest com conjuntos de atributos de tamanho, estrutura e tempo, sempre sem atributos calculados a partir do grafo completo.
+
+## 9. Resultados e discussão
+
+Na inspeção inicial, o pacote local continha 104 arquivos, com 53 grafos rotulados como campanha e 51 como não campanha. Após excluir a duplicata exata registrada na configuração, permanecem 103 grafos (52 campanhas e 51 não campanhas). O artigo do LEN-small descreve 100 grafos; portanto, a divergência de três grafos ainda não foi resolvida e a amostra canônica do experimento não está congelada.
+
+No pacote de 104 arquivos foram contabilizados 212.231 nós e 289.975 arestas. Todas as arestas tinham timestamp, e a inspeção não encontrou IDs de nós duplicados nem endpoints ausentes. Os arquivos não estão necessariamente em ordem cronológica, justificando a ordenação explícita no pipeline. A EDA aprofundada também aponta uma diferença relevante de escala entre as classes: campanhas tendem a ser menores, e as contagens absolutas das redes parciais podem refletir principalmente esse tamanho final. Assim, um bom resultado de classificação, por si só, não demonstraria que o modelo aprendeu sinais de coordenação.
+
+O artefato alcançado até esta entrega é um fluxo reproduzível de inspeção, construção de estados parciais e extração de atributos, com testes automatizados para os módulos compartilhados. **Não há, no estado documentado do repositório, treinamento de classificador nem métricas de teste**. Por isso, não é possível afirmar que a detecção precoce foi validada ou que os resultados esperados de desempenho foram alcançados. A entrega demonstra a preparação experimental e identifica as condições ainda necessárias para uma conclusão válida: resolver a composição da amostra, fixar a divisão por grafo e executar os baselines com avaliação por fração temporal e análise específica do efeito do tamanho.
+
+Essa limitação é um resultado importante: evita apresentar como desempenho de IA algo que ainda não foi medido. O uso atual deve ser entendido como protótipo de análise exploratória, não como sistema de decisão operacional.
+
+## 10. Conclusão
+
+O projeto estruturou uma abordagem para estudar a detecção precoce de campanhas coordenadas por meio da evolução temporal dos grafos do LEN. Foram caracterizados os dados disponíveis, implementados leitores incrementais e métricas para estados parciais, documentada uma duplicata e estabelecidas salvaguardas contra vazamento temporal e uso indevido de atributos do grafo completo.
+
+Os objetivos de preparação e análise exploratória foram alcançados. O objetivo de avaliar comparativamente modelos e medir o desempenho em diferentes momentos **ainda não foi alcançado**, pois o conjunto canônico permanece divergente da documentação e não há resultados de treino e teste registrados. Portanto, a principal conclusão neste bimestre é metodológica: existe infraestrutura para conduzir o experimento, mas ainda não há evidência suficiente para afirmar que o LEN permite detectar campanhas antes de observar a rede completa. Também não se pode generalizar os achados para outras plataformas, países ou períodos.
+
+Como continuidade, deve-se esclarecer os três arquivos excedentes, congelar a divisão dos grafos, comparar baselines e conjuntos de atributos, reportar métricas e incerteza por fração temporal e avaliar falsos positivos e falsos negativos antes de qualquer alegação de utilidade prática.
+
+## 11. Repositório e vídeo
+
+- Repositório público: [deteccao_precoce_campanhas_coordenadas_grafos](https://github.com/Mendes1801/deteccao_precoce_campanhas_coordenadas_grafos)
+- Vídeo público no YouTube (até 5 minutos): **[inserir URL após publicação]**
+- Dataset e instruções de acesso: [README da entrega](README.md#dataset)
+
+O vídeo deve apresentar título e equipe, professor, disciplina, curso e instituição; definir o problema; explicar o uso de IA e os fundamentos empregados; demonstrar os artefatos e o repositório; e manter duração máxima de cinco minutos.
+
+## 12. Referências
+
+### 12.1 Referências citadas
 
 GOPALAKRISHNAN, A. A.; HOSSAIN, J.; ELMAS, T.; SARIYÜCE, A. E. *Large Engagement Networks for Classifying Coordinated Campaigns and Organic Twitter Trends*. Proceedings of the International AAAI Conference on Web and Social Media, v. 19, n. 1, p. 688–702, 2025. DOI: [10.1609/icwsm.v19i1.35839](https://doi.org/10.1609/icwsm.v19i1.35839).
 
 GOPALAKRISHNAN, A. A.; HOSSAIN, J.; ELMAS, T.; SARIYÜCE, A. E. *Large Engagement Network*. Página do projeto e dataset. Disponível em: <https://erdemub.github.io/large-engagement-network/>. Acesso em: 15 set. 2026.
 
-## 10. Bibliografia
+### 12.2 Referências complementares
 
 GUDIVADA, V. N.; RAGHAVAN, V. V.; KOHLER, W. W. Web 2.0 and its implications for data management. *Journal of Information Science*, v. 35, n. 4, 2009.
 

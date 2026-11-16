@@ -1,3 +1,8 @@
+# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
+# Conteúdo: cálculo de características estruturais e temporais para grafos parciais.
+# Histórico de alterações:
+# 11/11/2026 | Grupo | Inclusão de identificação, síntese e histórico para a entrega N2.
+
 """Características estruturais e temporais de um estado parcial do LEN."""
 
 from __future__ import annotations

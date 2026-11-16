@@ -1,3 +1,8 @@
+# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
+# Conteúdo: testes da reconstrução de grafos parciais por tempo e por arestas observadas.
+# Histórico de alterações:
+# 11/11/2026 | Grupo | Inclusão de identificação, síntese e histórico para a entrega N2.
+
 import networkx as nx
 import pytest
 

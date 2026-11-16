@@ -1,3 +1,8 @@
+# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
+# Conteúdo: API pública dos leitores e extratores de atributos do dataset LEN.
+# Histórico de alterações:
+# 11/11/2026 | Grupo | Inclusão de identificação, síntese e histórico para a entrega N2.
+
 """Ferramentas para análise exploratória e temporal do dataset LEN."""
 
 from .features import extract_features

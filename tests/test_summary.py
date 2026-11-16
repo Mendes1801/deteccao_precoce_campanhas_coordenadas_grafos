@@ -1,3 +1,8 @@
+# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
+# Conteúdo: testes do leitor incremental e das métricas de inspeção do LEN.
+# Histórico de alterações:
+# 11/11/2026 | Grupo | Inclusão de identificação, síntese e histórico para a entrega N2.
+
 import json
 import math
 

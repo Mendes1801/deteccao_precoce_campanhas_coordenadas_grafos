@@ -1,7 +1,8 @@
-# Integrantes: preencher com nome completo, e-mail e RA de cada integrante.
+# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
 # Conteúdo: leitura incremental dos grafos JSON do LEN e cálculo das métricas da EDA.
 # Histórico de alterações:
 # 15/09/2026 | Grupo | Criação do leitor incremental e das métricas estruturais e temporais.
+# 11/11/2026 | Grupo | Complementação do cabeçalho de identificação para a entrega N2.
 
 """Inspeção incremental dos grafos JSON do LEN.
 

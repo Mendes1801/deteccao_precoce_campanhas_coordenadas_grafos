@@ -1,3 +1,8 @@
+# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
+# Conteúdo: testes de exclusões e exportação CSV da tabela de atributos parciais.
+# Histórico de alterações:
+# 11/11/2026 | Grupo | Inclusão de identificação, síntese e histórico para a entrega N2.
+
 import csv
 
 from len_eda.pipeline import load_exclusions, write_feature_table

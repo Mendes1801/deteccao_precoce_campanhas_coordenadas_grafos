@@ -1,3 +1,8 @@
+# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
+# Conteúdo: leitura temporal do LEN e reconstrução de grafos parciais sem informação futura.
+# Histórico de alterações:
+# 11/11/2026 | Grupo | Inclusão de identificação, síntese e histórico para a entrega N2.
+
 """Reconstrução de estados parciais dos grafos temporais do LEN.
 
 O LEN preserva somente a interação mais recente de cada par ordenado. Portanto,

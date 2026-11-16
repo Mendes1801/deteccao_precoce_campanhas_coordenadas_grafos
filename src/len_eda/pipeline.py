@@ -1,3 +1,8 @@
+# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
+# Conteúdo: geração de tabela CSV de atributos por grafo, modalidade e fração temporal.
+# Histórico de alterações:
+# 11/11/2026 | Grupo | Inclusão de identificação, síntese e histórico para a entrega N2.
+
 """Gera uma tabela de features para estados parciais dos grafos do LEN."""
 
 from __future__ import annotations
