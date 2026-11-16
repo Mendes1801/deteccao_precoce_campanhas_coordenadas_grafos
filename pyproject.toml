@@ -21,6 +21,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8,<10"]
 notebook = ["jupyterlab>=4.4,<5"]
+camara = ["scikit-learn>=1.5,<2"]
 
 [project.scripts]
 len-summary = "len_eda.summary:main"
