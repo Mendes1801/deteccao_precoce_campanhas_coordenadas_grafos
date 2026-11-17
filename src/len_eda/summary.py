@@ -1,4 +1,4 @@
-# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
+# Integrantes: Camila N. Carniel - RA 10338558-0; Bruno G. Ramalho - RA 1042649-1.
 # Conteúdo: leitura incremental dos grafos JSON do LEN e cálculo das métricas da EDA.
 # Histórico de alterações:
 # 15/09/2026 | Grupo | Criação do leitor incremental e das métricas estruturais e temporais.

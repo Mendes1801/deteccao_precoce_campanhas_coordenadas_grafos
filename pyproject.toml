@@ -16,6 +16,7 @@ dependencies = [
   "pyvis>=0.3.2,<1",
   "requests>=2.32,<3",
   "seaborn>=0.13,<1",
+  "scikit-learn>=1.7,<2",
 ]
 
 [project.optional-dependencies]
@@ -25,6 +26,7 @@ notebook = ["jupyterlab>=4.4,<5"]
 [project.scripts]
 len-summary = "len_eda.summary:main"
 len-features = "len_eda.pipeline:main"
+len-evaluate = "len_eda.model:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

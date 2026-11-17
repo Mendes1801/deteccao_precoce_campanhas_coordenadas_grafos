@@ -4,13 +4,20 @@ TCC sobre detecção precoce de campanhas coordenadas em redes sociais por
 meio da evolução de grafos temporais. A base experimental inicial é o
 [Large Engagement Networks (LEN)](https://erdemub.github.io/large-engagement-network/).
 
+**Integrantes:** Camila N. Carniel — RA 10338558-0; Bruno G. Ramalho — RA 1042649-1  
+**Instituição:** Universidade Presbiteriana Mackenzie — Faculdade de Computação e Informática  
+**Disciplina:** Inteligência Artificial — 7ºK SI, Noite  
+**Professor:** Prof. Dr. Leandro Zerbinatti
+
 O estado atual do ambiente, o que já foi executado e o fluxo recomendado para
 os próximos notebooks estão em [docs/guia_ambiente_e_fluxo.md](docs/guia_ambiente_e_fluxo.md).
 
 ## Entrega do projeto
 
 - [Relatório do Projeto](IA_7K_SI_Camila%26Bruno/Relatório%20do%20Projeto.md): problema, ética, dataset, EDA, metodologia e referências.
-- [Notebook da EDA inicial](notebooks/01_eda_inicial_len.ipynb): análise exploratória em Python.
+- [Notebook da EDA inicial](IA_7K_SI_Camila%26Bruno/notebooks/01_eda_inicial_len.ipynb): análise exploratória em Python.
+- [Notebook da EDA aprofundada](IA_7K_SI_Camila%26Bruno/notebooks/02_eda_aprofundada_len.ipynb): estados parciais e grafos temporais.
+- [Slides da apresentação](IA_7K_SI_Camila%26Bruno/slides_apresentacao_5min.html): apresentação visual de até cinco minutos.
 - [Código-fonte da EDA](src/len_eda/summary.py): leitor incremental e cálculo das métricas.
 - Dataset: `small_encoder_final/`, disponibilizado localmente conforme a base LEN; os arquivos brutos não são alterados.
 

@@ -9,11 +9,11 @@
 ##Meta dados do dataset
 metadata_graph.json
 
+## Dataset LEN: mantido localmente devido ao volume
+small_encoder_final/
+
 ##Arquivos compactados
 *.tar
-
-##Pastas que devem ser ignoradas
-small_encoder_final
 
 ##Arquivos excel
 *.xlsx

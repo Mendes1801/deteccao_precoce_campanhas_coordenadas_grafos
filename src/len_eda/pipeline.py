@@ -1,4 +1,4 @@
-# Integrantes: Camila Nunes Carniel (RA/e-mail pendentes); Bruno Germanetti (RA/e-mail pendentes).
+# Integrantes: Camila N. Carniel - RA 10338558-0; Bruno G. Ramalho - RA 1042649-1.
 # Conteúdo: geração de tabela CSV de atributos por grafo, modalidade e fração temporal.
 # Histórico de alterações:
 # 11/11/2026 | Grupo | Inclusão de identificação, síntese e histórico para a entrega N2.
