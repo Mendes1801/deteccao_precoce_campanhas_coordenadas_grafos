@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detecção precoce de campanhas coordenadas</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --panel: #121a2b;
+        --panel-2: #1a2440;
+        --primary: #7cc7ff;
+        --secondary: #96f2d7;
+        --accent: #ffcd70;
+        --text: #ebf3ff;
+        --muted: #a9bad8;
+        --code: #0d1324;
+        --good: #86efac;
+        --warn: #facc15;
+        --danger: #fca5a5;
+      }
+
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        height: 100%;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: linear-gradient(135deg, #09111d 0%, #0d1324 100%);
+        color: var(--text);
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .deck {
+        width: 100%;
+        max-width: 1600px;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .slide {
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100vh;
+        padding: 46px 72px 40px 72px;
+        background: radial-gradient(circle at top left, rgba(124,199,255,0.10), transparent 25%),
+                    linear-gradient(180deg, rgba(16,22,35,0.96), rgba(9,15,28,0.98));
+      }
+
+      .slide.active { display: block; }
+
+      h1, h2, h3 { margin: 0 0 18px; line-height: 1.1; }
+      h1 { font-size: 3.2rem; }
+      h2 { font-size: 2.5rem; }
+      h3 { font-size: 1.8rem; }
+      p, li { font-size: 1.05rem; line-height: 1.35; color: var(--text); }
+      ul { margin-top: 12px; padding-left: 28px; }
+      li { margin-bottom: 10px; }
+
+      .tag {
+        display: inline-block;
+        background: rgba(124,199,255,0.14);
+        border: 1px solid rgba(124,199,255,0.35);
+        color: var(--primary);
+        border-radius: 999px;
+        padding: 8px 16px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 24px;
+        align-items: center;
+        height: calc(100vh - 200px);
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+        align-items: start;
+      }
+
+      .panel {
+        background: rgba(18,26,43,0.9);
+        border: 1px solid rgba(151,168,208,0.18);
+        border-radius: 20px;
+        padding: 22px 20px;
+        box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+        gap: 16px;
+      }
+
+      .metric {
+        background: rgba(26,36,64,0.9);
+        border: 1px solid rgba(124,199,255,0.18);
+        border-radius: 14px;
+        padding: 16px 18px;
+      }
+
+      .metric strong {
+        font-size: 1.7rem;
+        color: var(--secondary);
+        display: block;
+      }
+
+      .metric span {
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .code-window {
+        background: rgba(13,19,36,0.92);
+        border: 1px solid rgba(151,168,208,0.25);
+        border-radius: 16px;
+        overflow: hidden;
+      }
+
+      .code-header {
+        background: rgba(32,42,63,0.9);
+        border-bottom: 1px solid rgba(151,168,208,0.25);
+        padding: 10px 16px;
+        display: flex;
+        gap: 8px;
+      }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .dot.red { background: #ff5f57; }
+      .dot.yellow { background: #ffbd2e; }
+      .dot.green { background: #28c840; }
+
+      pre {
+        margin: 0;
+        padding: 18px 18px 20px 18px;
+        overflow: auto;
+        font-size: 0.82rem;
+        line-height: 1.5;
+        color: #dfeaff;
+        white-space: pre-wrap;
+        word-break: break-word;
+      }
+
+      code {
+        font-family: "Consolas", "Monaco", monospace;
+      }
+
+      .footer {
+        position: absolute;
+        left: 72px;
+        right: 72px;
+        bottom: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.82rem;
+        color: var(--muted);
+        border-top: 1px solid rgba(151,168,208,0.18);
+        padding-top: 14px;
+      }
+
+      .mini {
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .hero {
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 1.02;
+        margin: 18px 0 26px;
+      }
+
+      .big-number {
+        font-size: 3.2rem;
+        font-weight: 800;
+        color: var(--primary);
+      }
+
+      .status {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(134,239,172,0.08);
+        color: var(--good);
+        border: 1px solid rgba(134,239,172,0.22);
+        border-radius: 999px;
+        padding: 8px 14px;
+        font-weight: 700;
+      }
+
+      .warning {
+        color: var(--warn);
+      }
+
+      .danger {
+        color: var(--danger);
+      }
+
+      @media (max-width: 1200px) {
+        .hero { font-size: 2.6rem; }
+        h1 { font-size: 2.4rem; }
+        h2 { font-size: 2rem; }
+        .grid { grid-template-columns: 1fr; }
+        .grid-2 { grid-template-columns: 1fr; }
+        .slide { padding-left: 32px; padding-right: 32px; }
+        .footer { left: 32px; right: 32px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="deck">
+      <section class="slide active">
+        <div class="tag">7ºK SI • Inteligência Artificial</div>
+        <div class="hero">Detecção precoce de campanhas coordenadas<br>em redes sociais</div>
+        <div class="grid">
+          <div>
+            <p><strong>Projeto:</strong> uso de grafos temporais para distinguir campanhas coordenadas de comportamentos orgânicos.</p>
+            <p><strong>Integrantes:</strong> Camila Nunes Carniel e Bruno Germanetti</p>
+            <p><strong>Professor:</strong> Prof. Dr. Leandro Zerbinatti</p>
+            <p><strong>Instituição:</strong> Universidade Presbiteriana Mackenzie — Faculdade de Computação e Informática</p>
+            <div class="status">Objetivo: detectar cedo, sem revelar informação futura</div>
+          </div>
+          <div class="panel">
+            <h3>Problema central</h3>
+            <ul>
+              <li>Os sinais iniciais são incompletos.</li>
+              <li>Campanhas podem parecer comportamento legítimo.</li>
+              <li>Precisamos decidir cedo com base em grafos parciais.</li>
+            </ul>
+            <div class="mini" style="margin-top:18px;">Pergunta do projeto: quanto da evolução da rede é necessário observar para classificar?</div>
+          </div>
+        </div>
+        <div class="footer">
+          <span>Apresentação de 5 minutos</span>
+          <span>Projeto institucional • N2</span>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="tag">Slide 2 • Contexto</div>
+        <h2>Por que isso importa?</h2>
+        <div class="grid">
+          <div>
+            <p>Campanhas coordenadas podem crescer rapidamente, amplificar narrativas e formar padrões de engajamento artificial.</p>
+            <ul>
+              <li>Falsos negativos deixam campanhas ativas sem análise.</li>
+              <li>Falsos positivos podem rotular comportamento legítimo como má-fé.</li>
+              <li>O desafio é decidir cedo, quando os dados ainda são incompletos.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="code-window">
+              <div class="code-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <pre><code>Problema central:
+Dado um grafo parcialmente observado,
+estimar se ele pertence a uma campanha
+coordenada antes de observar toda a rede.
+
+Pergunta:
+Qual fração da evolução temporal basta para
+obter uma decisão confiável?</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <span>Campanhas coordenadas x comportamento orgânico</span>
+          <span>Detecção precoce</span>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="tag">Slide 3 • Dados</div>
+        <h2>Base experimental: LEN</h2>
+        <div class="grid">
+          <div class="panel">
+            <p>Usamos o <strong>Large Engagement Networks (LEN)</strong>, uma base de grafos sociais temporais rotulados como <span style="color: var(--secondary); font-weight:700;">campaign</span> ou <span style="color: var(--accent); font-weight:700;">noncampaign</span>.</p>
+            <div class="metrics" style="margin-top:18px;">
+              <div class="metric"><strong>104</strong><span>arquivos locais</span></div>
+              <div class="metric"><strong>53</strong><span>campanhas</span></div>
+              <div class="metric"><strong>51</strong><span>não campanhas</span></div>
+              <div class="metric"><strong>212k</strong><span>nós</span></div>
+            </div>
+            <div class="mini" style="margin-top: 18px;">A base preserva timestamp nas arestas, o que torna possível reconstruir a evolução temporal.</div>
+          </div>
+          <div class="code-window">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <pre><code>def _filename_metadata(path: Path) -> tuple[str, str]:
+    name = path.name
+    if name.endswith(NONCAMPAIGN_SUFFIX):
+        return name[: -len(NONCAMPAIGN_SUFFIX)], "noncampaign"
+    if name.endswith(CAMPAIGN_SUFFIX):
+        topic = name[: -len(CAMPAIGN_SUFFIX)]
+        if "___" in topic:
+            topic = topic.rsplit("___", 1)[0]
+        return topic, "campaign"
+    return path.stem, "unknown"</code></pre>
+          </div>
+        </div>
+        <div class="footer">
+          <span>Grafo direcionado • arestas com timestamp</span>
+          <span>campanha vs noncampaign</span>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="tag">Slide 4 • Intenção do código</div>
+        <h2>Leitura incremental e preparação dos dados</h2>
+        <div class="grid-2">
+          <div class="code-window">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <pre><code>class _SanitizedJsonReader:
+    """Adaptar constantes não padronizadas para JSON válido."""
+    _OVERLAP = len(b"-Infinity") - 1
+
+    @staticmethod
+    def _split_and_sanitize(data: bytes) -> tuple[bytes, bytes]:
+        safe_cut = max(0, len(data) - _SanitizedJsonReader._OVERLAP)
+        for match in NON_STANDARD_NUMBER.finditer(data):
+            if match.start() < safe_cut:
+                safe_cut = max(safe_cut, match.end())
+        safe = NON_STANDARD_NUMBER.sub(b"null", data[:safe_cut])
+        return safe, data[safe_cut:]
+
+    def read(self, size: int = -1) -> bytes:
+        ...
+        # lê em chunks, sem carregar o JSON inteiro na memória</code></pre>
+          </div>
+          <div>
+            <p>Esse trecho mostra a intenção central do projeto:</p>
+            <ul>
+              <li>tratar arquivos grandes de forma incremental;</li>
+              <li>sanear valores como <span class="warning">NaN</span> sem alterar os dados originais;</li>
+              <li>evitar que a análise quebre por inconsistências do dataset;</li>
+              <li>manter o pipeline reprodutível e auditável.</li>
+            </ul>
+            <div class="panel" style="margin-top:16px;">
+              <div class="status">Leitura incremental da base</div>
+              <p class="mini" style="margin-top:10px;">O objetivo é preparar o dataset para construir estados parciais e comparar comportamento em diferentes momentos da evolução.</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <span>python + ijson + grafos temporais</span>
+          <span>Pipeline robusto</span>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="tag">Slide 5 • Pipeline</div>
+        <h2>Construção dos estados parciais</h2>
+        <div class="grid">
+          <div>
+            <ul>
+              <li>Leitura dos arquivos JSON.</li>
+              <li>Ordenação das arestas por timestamp.</li>
+              <li>Geração de estados em 10%, 20%, ..., 100%.</li>
+              <li>Extração de métricas estruturais e temporais.</li>
+              <li>Comparação entre campanhas e não campanhas.</li>
+            </ul>
+            <div class="panel" style="margin-top:18px;">
+              <h3>Importante</h3>
+              <p>Características calculadas sobre o grafo completo, como <span class="danger">k-core</span>, não devem entrar nos estados parciais porque carregam informação futura.</p>
+            </div>
+          </div>
+          <div class="code-window">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <pre><code>len-features \
+  --data-dir small_encoder_final \
+  --exclusions config/len_small_exclusions.csv \
+  --output outputs/partial_graph_features.csv
+
+jupyter lab notebooks/02_eda_aprofundada_len.ipynb</code></pre>
+          </div>
+        </div>
+        <div class="footer">
+          <span>Grafo parcial x evolução temporal</span>
+          <span>Sem vazamento de informação futura</span>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="tag">Slide 6 • Resultados</div>
+        <h2>O que já foi validado</h2>
+        <div class="grid-2">
+          <div class="panel">
+            <div class="metrics">
+              <div class="metric"><strong>103</strong><span>grafos únicos</span></div>
+              <div class="metric"><strong>52</strong><span>campanhas</span></div>
+              <div class="metric"><strong>51</strong><span>não campanhas</span></div>
+              <div class="metric"><strong>289.975</strong><span>arestas</span></div>
+            </div>
+            <p style="margin-top:18px;">Todos os arquivos inspecionados possuem timestamps nas arestas. A estrutura temporal já foi confirmada e a base está pronta para a próxima etapa de modelagem.</p>
+          </div>
+          <div class="code-window">
+            <div class="code-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <pre><code># Resumo da análise exploratória
+Arquivos locais: 104
+Campanhas: 53
+Não campanhas: 51
+Duplicata exata: 1
+Grafos únicos: 103
+Nós totais: 212.231
+Arestas totais: 289.975
+Timestamps nas arestas: 100%</code></pre>
+          </div>
+        </div>
+        <div class="footer">
+          <span>Resultado de preparação e EDA</span>
+          <span>Sem classificação final ainda</span>
+        </div>
+      </section>
+
+      <section class="slide">
+        <div class="tag">Slide 7 • Ética e próximos passos</div>
+        <h2>Importante: a IA não deve decidir sozinho</h2>
+        <div class="grid-2">
+          <div>
+            <ul>
+              <li>O rótulo do dataset não prova má-fé nem intenção.</li>
+              <li>Falso positivo pode prejudicar comportamento legítimo.</li>
+              <li>O objetivo é apoiar análise humana, não automatizar punições.</li>
+              <li>Próximo passo: resolver amostra final, avaliar baselines e métricas por fração temporal.</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Repositório</h3>
+            <p>github.com/Mendes1801/deteccao_precoce_campanhas_coordenadas_grafos</p>
+            <div class="mini" style="margin-top:14px;">Relatório • notebooks • código-fonte • documentação.</div>
+            <div class="status" style="margin-top:16px;">Próximos passos: divisão por grafo • baselines • métricas por janela temporal</div>
+          </div>
+        </div>
+        <div class="footer">
+          <span>Conclusão: infraestrutura construída, validação futura necessária</span>
+          <span>Obrigado.</span>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const slides = [...document.querySelectorAll('.slide')];
+      let index = 0;
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowRight' || event.key === 'PageDown' || event.key === ' ') {
+          index = (index + 1) % slides.length;
+          updateSlide();
+        }
+        if (event.key === 'ArrowLeft' || event.key === 'PageUp') {
+          index = (index - 1 + slides.length) % slides.length;
+          updateSlide();
+        }
+      });
+
+      function updateSlide() {
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+      }
+    </script>
+  </body>
+</html>
