@@ -215,6 +215,17 @@
         color: var(--danger);
       }
 
+      .presentation-link {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .presentation-link:hover,
+      .presentation-link:focus {
+        text-decoration: underline;
+      }
+
       @media (max-width: 1200px) {
         .hero { font-size: 2.6rem; }
         h1 { font-size: 2.4rem; }
@@ -462,8 +473,9 @@ Timestamps nas arestas: 100%</code></pre>
             </ul>
           </div>
           <div class="panel">
-            <h3>Repositório</h3>
-            <p>github.com/Mendes1801/deteccao_precoce_campanhas_coordenadas_grafos</p>
+            <h3>Repositório e apresentação</h3>
+            <p><a class="presentation-link" href="https://github.com/Mendes1801/deteccao_precoce_campanhas_coordenadas_grafos" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></p>
+            <p><a class="presentation-link" href="https://www.youtube.com/watch?is=w-TAFRy00uK1hzPh&amp;v=bgLKbvuDu0w&amp;feature=youtu.be" target="_blank" rel="noopener noreferrer">Assistir ao vídeo da apresentação</a></p>
             <div class="mini" style="margin-top:14px;">Relatório • notebooks • código-fonte • documentação.</div>
             <div class="status" style="margin-top:16px;">Próximos passos: divisão por grafo • baselines • métricas por janela temporal</div>
           </div>

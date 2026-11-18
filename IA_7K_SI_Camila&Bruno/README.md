@@ -51,4 +51,4 @@ O dataset oficial LEN-small está presente localmente na pasta `small_encoder_fi
 ## Publicação e vídeo
 
 - Repositório público: [Mendes1801/deteccao_precoce_campanhas_coordenadas_grafos](https://github.com/Mendes1801/deteccao_precoce_campanhas_coordenadas_grafos)
-- Vídeo público no YouTube (máximo de 5 minutos): **[inserir URL após publicação]**
+- Vídeo público no YouTube (máximo de 5 minutos): [Assistir à apresentação](https://www.youtube.com/watch?is=w-TAFRy00uK1hzPh&v=bgLKbvuDu0w&feature=youtu.be)

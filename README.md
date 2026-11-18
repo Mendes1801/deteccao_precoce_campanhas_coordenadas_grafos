@@ -18,6 +18,7 @@ os próximos notebooks estão em [docs/guia_ambiente_e_fluxo.md](docs/guia_ambie
 - [Notebook da EDA inicial](IA_7K_SI_Camila%26Bruno/notebooks/01_eda_inicial_len.ipynb): análise exploratória em Python.
 - [Notebook da EDA aprofundada](IA_7K_SI_Camila%26Bruno/notebooks/02_eda_aprofundada_len.ipynb): estados parciais e grafos temporais.
 - [Slides da apresentação](IA_7K_SI_Camila%26Bruno/slides_apresentacao_5min.html): apresentação visual de até cinco minutos.
+- [Vídeo da apresentação no YouTube](https://www.youtube.com/watch?is=w-TAFRy00uK1hzPh&v=bgLKbvuDu0w&feature=youtu.be).
 - [Código-fonte da EDA](src/len_eda/summary.py): leitor incremental e cálculo das métricas.
 - Dataset: `small_encoder_final/`, disponibilizado localmente conforme a base LEN; os arquivos brutos não são alterados.
 
